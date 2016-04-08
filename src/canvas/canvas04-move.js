@@ -1,11 +1,6 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Move from 'canvas/effects/Move.js';
-import Loader from 'loader/Loader.js';
+import { Canvas, GetContext, BackgroundColor, AddToDOM, Move, Loader } from 'lazer';
 
-export default class CanvasTest {
+class Canvas04Move {
 
     constructor () {
 
@@ -42,4 +37,5 @@ export default class CanvasTest {
 
 }
 
-new CanvasTest();
+// new CanvasTest();
+export default Canvas04Move

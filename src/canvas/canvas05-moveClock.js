@@ -1,12 +1,7 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Move from 'canvas/effects/Move.js';
-import Loader from 'loader/Loader.js';
-import Clock from 'time/MasterClock.js';
+import { Canvas, GetContext, BackgroundColor, AddToDOM, MoveHorizontal, Loader, MasterClock } from 'lazer';
 
-export default class CanvasTest {
+
+class CanvasTestMoveClock {
 
     constructor () {
 
@@ -47,5 +42,5 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();
+export default CanvasTestMoveClock
+// new CanvasTest();

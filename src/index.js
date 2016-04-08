@@ -1,5 +1,3 @@
-import array from './array'
+import * as canvas from './canvas'
 
-export {
-	array
-}
+console.log(canvas)
