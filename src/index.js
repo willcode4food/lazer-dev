@@ -1,3 +1,3 @@
-import * as canvas from './canvas'
+import { CategoryButton } from './components'
 
-console.log(canvas)
+console.log(CategoryButton('canvas'))

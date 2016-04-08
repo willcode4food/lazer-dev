@@ -1,6 +1,6 @@
 import { Canvas, AddToDOM, BackgroundColor, RandomDataGenerator} from 'lazer';
 
-const canvas01Create = () => {
+const Canvas01Create = () => {
 	let rnd = new RandomDataGenerator();
 
 	let canvas = Canvas(512, 256);
@@ -19,4 +19,4 @@ const canvas01Create = () => {
 	}
 }
 
-export default canvas01Create
+export default Canvas01Create
