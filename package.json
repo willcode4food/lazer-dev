@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "npm install && webpack-dev-server --config webpack.config.dev.js --progress --colors",
     "build": "npm install && webpack --config webpack.config.prod.js",
-    "profile": "npm install && webpack --progress --profile --json > stats.json"
+    "profile": "npm install && webpack --progress --profile --json > stats.json",
+    "dev-win": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
+    "build-win": "webpack --config webpack.config.prod.js",
+    "profile-win": "webpack --progress --profile --json > stats.json"
   },
   "repository": {
     "type": "git",
@@ -18,9 +21,6 @@
   "bugs": "https://github.com/photonstorm/lazer/issues",
   "license": "MIT",
   "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
-  "dependencies": {
-    "lazer": "file:///Users/marbesman/repos/lazer"
-  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.6.5",
@@ -35,6 +35,7 @@
     "css-loader": "^0.23.1",
     "eslint": "^2.3.0",
     "eslint-loader": "^1.3.0",
+    "estraverse-fb": "^1.3.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.9.0",
     "path": "^0.12.7",
@@ -43,5 +44,8 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.8.4"
+  },
+  "dependencies": {
+    "lazer": "file://C:\\Users\\willcode4food\\Source\\Repos\\lazer"
   }
 }

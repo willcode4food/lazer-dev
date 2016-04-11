@@ -40,6 +40,6 @@ class Canvas02MoveH {
 
 }
 
-export default Canvas02MoveH
+export default Canvas02MoveH;
 
 //new CanvasTest();

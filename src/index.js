@@ -1,3 +1,12 @@
-import { CategoryButton } from './components'
+import { CategoryButton } from './components';
 
-console.log(CategoryButton('canvas'))
+let MyCatButton = document.registerElement('category-button', CategoryButton);
+
+let myBtn = new MyCatButton;
+
+myBtn.properties = {
+    category: 'canvas'
+};
+
+document.querySelector('#game').appendChild(myBtn);
+

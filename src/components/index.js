@@ -1,5 +1,5 @@
-import CategoryButton from './categoryButton'
+import CategoryButton from './categoryButton';
 
 export {
 	CategoryButton
-}
+};

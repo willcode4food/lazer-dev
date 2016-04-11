@@ -38,4 +38,4 @@ class Canvas04Move {
 }
 
 // new CanvasTest();
-export default Canvas04Move
+export default Canvas04Move;

@@ -39,4 +39,4 @@ class Canvas03MoveV {
     }
 
 }
-export default Canvas03MoveV
+export default Canvas03MoveV;
