@@ -1,30 +1,30 @@
 import { MatrixToString, RotateMatrix } from 'lazer';
 
 export default function array07rotateMatrix (){
-	let small = [
-	    [ 1, 1, 1, 1, 1, 1 ],
-	    [ 2, 0, 0, 0, 0, 4 ],
-	    [ 2, 0, 1, 2, 0, 4 ],
-	    [ 2, 0, 3, 4, 0, 4 ],
-	    [ 2, 0, 0, 0, 0, 4 ],
-	    [ 3, 3, 3, 3, 3, 3 ]
-	];
+    let small = [
+        [ 1, 1, 1, 1, 1, 1 ],
+        [ 2, 0, 0, 0, 0, 4 ],
+        [ 2, 0, 1, 2, 0, 4 ],
+        [ 2, 0, 3, 4, 0, 4 ],
+        [ 2, 0, 0, 0, 0, 4 ],
+        [ 3, 3, 3, 3, 3, 3 ]
+    ];
 
-	console.log('Before Rotation');
+    console.log('Before Rotation');
 
-	console.log(MatrixToString(small));
+    console.log(MatrixToString(small));
 
-	//  Rotate Left
-	// let t = RotateMatrix(small, 90);
+    //  Rotate Left
+    // let t = RotateMatrix(small, 90);
 
-	//  Rotate Right
-	// let t = RotateMatrix(small, -90);
+    //  Rotate Right
+    // let t = RotateMatrix(small, -90);
 
-	//  Rotate 180
-	let t = RotateMatrix(small, 180);
+    //  Rotate 180
+    let t = RotateMatrix(small, 180);
 
 
-	console.log('After Rotation');
+    console.log('After Rotation');
 
-	console.log(MatrixToString(t));
+    console.log(MatrixToString(t));
 }
