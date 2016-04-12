@@ -8,5 +8,6 @@ myBtn.properties = {
     category: 'canvas'
 };
 
-document.querySelector('#game').appendChild(myBtn);
+myBtn.render(document.querySelector('#game'));
+// document.querySelector('#game').appendChild(myBtn.render());
 

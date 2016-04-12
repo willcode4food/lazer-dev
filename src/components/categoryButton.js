@@ -1,35 +1,35 @@
-class CategoryButton extends HTMLElement {
-    constructor() {
-        super();
-    }
+import styles from './CategoryButton.css';
 
+
+export default class CategoryButton {
     set properties(props){
         this.category = props.category;
         this.target = props.target ? props.target : 'div';
         this.dist = props.dist ? props.dist : 'js';
     }
-     // Fires when an instance was removed from the document.
-    detachedCallback() {}
-
-    // Fires when an attribute was added, removed, or updated.
-    attributeChangedCallback(attr, oldVal, newVal) {}
-
-    // Fires when an instance was inserted into the document.
-    attachedCallback() {
-        console.log('yo');
+    render(container) {
         if (!this.category) {
             return;
         }
-
+        console.log(styles);
         let req = require('../' + this.category + '/index.js');
-        console.log(req);
         let numTests = Object.keys(req).length;
 
-        console.log(numTests);
+        let divBtnWrapper = document.createElement('div');
+        let divExampleTotal = document.createElement('div');
+        let linkExample = document.createElement('a');
+
+        divBtnWrapper.id = this.category;
+        divBtnWrapper.className = styles.buttonWrapper;
+
+        divExampleTotal.className = styles.exampleTotal;
+        divExampleTotal.innerHTML = numTests;
+
+        linkExample.className = styles.example;
+        linkExample.innerHTML = this.category;
+
+        divBtnWrapper.appendChild(divExampleTotal);
+        divBtnWrapper.appendChild(linkExample);
+        container.appendChild(divBtnWrapper);
     }
-    // Fires when an instance of the element is created.
-    createdCallback() {}
-
 }
-
-export default CategoryButton;

@@ -31,7 +31,7 @@ module.exports = merge(base.common, {
 				},
 				{
 					test: /\.css$/,
-					loaders: ['css', 'autoprefixer'],
+					loader: 'style!css?modules&sourceMap&localIdentName=[local]_[hash:base64:5]',
 					exclude: ['/node_modules', '/src/lib', '/build']
 				},
 				{ 
@@ -43,7 +43,7 @@ module.exports = merge(base.common, {
 			      test: /\.(woff|eot|ttf)$/,
 			      loader: 'url-loader?limit=100000',
 			      exclude: ['/node_modules', '/src/lib', '/build']
-			    }
+			  }
 			]
 		},
 		node: {
