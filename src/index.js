@@ -1,8 +1,6 @@
 import { CategoryButton } from './components';
 
-let MyCatButton = document.registerElement('category-button', CategoryButton);
-
-let myBtn = new MyCatButton;
+let myBtn = new CategoryButton;
 
 myBtn.properties = {
     category: 'canvas'
