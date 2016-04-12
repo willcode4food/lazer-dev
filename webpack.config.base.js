@@ -6,6 +6,7 @@ var HtmlwebpackPlugin = require('html-webpack-plugin');
 
 var PATHS = {
 	app: path.resolve(__dirname, 'src'),
+	appEntry: path.resolve(__dirname, 'src','_site'),
 	build: path.resolve(__dirname, 'build')
 }
 
@@ -14,7 +15,7 @@ var PATHS = {
 module.exports = {
 	common: {
 		entry: {
-			app: path.resolve(PATHS.app, 'index')
+			app: path.resolve(PATHS.appEntry, 'index')
 		},
 		output: {
 			path: PATHS.build,

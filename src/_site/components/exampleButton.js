@@ -1,32 +1,31 @@
-import styles from './CategoryButton.css';
+import styles from './ExampleButton.css';
 
 
-export default class CategoryButton {
+export default class ExampleButton {
     set properties(props){
-        this.category = props.category;
+        this.example = props.example;
         this.target = props.target ? props.target : 'div';
         this.dist = props.dist ? props.dist : 'js';
     }
     render(container) {
-        if (!this.category) {
+        if (!this.example) {
             return;
         }
-        console.log(styles);
-        let req = require('../' + this.category + '/index.js');
+        let req = require('../../' + this.example + '/index.js');
         let numTests = Object.keys(req).length;
 
         let divBtnWrapper = document.createElement('div');
         let divExampleTotal = document.createElement('div');
         let linkExample = document.createElement('a');
 
-        divBtnWrapper.id = this.category;
+        divBtnWrapper.id = this.example;
         divBtnWrapper.className = styles.buttonWrapper;
 
         divExampleTotal.className = styles.exampleTotal;
         divExampleTotal.innerHTML = numTests;
 
         linkExample.className = styles.example;
-        linkExample.innerHTML = this.category;
+        linkExample.innerHTML = this.example;
 
         divBtnWrapper.appendChild(divExampleTotal);
         divBtnWrapper.appendChild(linkExample);
