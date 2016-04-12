@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var merge = require('webpack-merge');
 var base = require('./webpack.config.base');
-
+var autoprefixer = require('autoprefixer');
 module.exports = merge(base.common, {
  		devtool: 'inline-source-map',
 		devServer: {
@@ -31,7 +31,7 @@ module.exports = merge(base.common, {
 				},
 				{
 					test: /\.css$/,
-					loader: 'style!css?modules&sourceMap&localIdentName=[local]_[hash:base64:5]',
+					loader: 'style!css?modules&sourceMap&localIdentName=[local]_[hash:base64:5]&importLoaders=1!postcss-loader',
 					exclude: ['/node_modules', '/src/lib', '/build']
 				},
 				{ 
@@ -46,6 +46,11 @@ module.exports = merge(base.common, {
 			  }
 			]
 		},
+		// support last two released versions of each major browser as well as ie >= 9
+		// major browsers listed here: https://github.com/ai/browserslist
+		postcss: [
+			autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
+		],
 		node: {
 			fs: 'empty'
 		},
