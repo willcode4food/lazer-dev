@@ -1,6 +1,8 @@
-import { MatrixToString, ReverseColumns } from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array09reverseCols (){
+const { MatrixToString, ReverseColumns } = array.matrix;
+
+const array09reverseCols = () => {
     let small = [
         [ 1, 2, 3, 4, 5, 6 ],
         [ 1, 2, 3, 4, 5, 6 ],
@@ -19,4 +21,6 @@ export default function array09reverseCols (){
     console.log('After Reverse');
 
     console.log(MatrixToString(t));
-}
+};
+
+export default array09reverseCols;

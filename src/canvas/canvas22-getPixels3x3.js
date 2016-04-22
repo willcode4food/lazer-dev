@@ -1,13 +1,9 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import GetImageData from 'canvas/imagedata/GetImageData.js';
-import PutImageData from 'canvas/imagedata/PutImageData.js';
-import GetPixels3x3 from 'canvas/imagedata/GetPixels3x3.js';
-import Loader from 'loader/Loader.js';
+import { Canvas, GetContext, imagedata } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
+const  { GetImageData, GetPixels3x3 } = imagedata;
 
-export default class CanvasTest {
-
+export default class Canvas22GetPixels3x3 {
     constructor () {
 
         this.canvas = Canvas(512, 256);
@@ -40,5 +36,3 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();

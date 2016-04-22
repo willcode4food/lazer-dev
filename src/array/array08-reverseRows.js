@@ -1,6 +1,8 @@
-import { MatrixToString, ReverseRows } from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array08reverseRows (){
+const { MatrixToString, ReverseRows } = array.matrix;
+
+const array08reverseRows = () => {
     let small = [
         [ 1, 1, 1, 1, 1, 1 ],
         [ 2, 0, 0, 0, 0, 4 ],
@@ -19,4 +21,6 @@ export default function array08reverseRows (){
     console.log('After Reverse Rows');
 
     console.log(MatrixToString(t));
-}
+};
+
+export default array08reverseRows;

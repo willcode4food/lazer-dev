@@ -1,6 +1,8 @@
-import Shuffle from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array05shuffle (){
+const { Shuffle } = array;
+
+const array05shuffle = () => {
     let data = [
         'Acorn Atom', 'BBC Micro', 'Electron', 'BBC Master', 'Acorn Archimedes',
         'A7000', 'CPC 464', '464 Plus', 'PCW', 'PC-1512', 'Imagination Machine',
@@ -12,4 +14,6 @@ export default function array05shuffle (){
     Shuffle(data);
 
     console.log(data);
-}
+};
+
+export default array05shuffle;

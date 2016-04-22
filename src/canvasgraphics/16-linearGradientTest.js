@@ -1,14 +1,9 @@
-import DegToRad from 'math/DegToRad.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Line from 'canvas/graphics/LineStyle.js';
-import FillGradient from 'canvas/graphics/FillGradient.js';
-import Stroke from 'canvas/graphics/Stroke.js';
-import Rectangle from 'canvas/graphics/Rectangle.js';
-import LinearGradient, { addColor } from 'canvas/graphics/LinearGradient.js';
+import { Canvas, graphics } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { FillGradient, Rectangle, LinearGradient } = graphics;
+
+export default class CanvasGraphics16LinearGradientTest {
 
     constructor () {
 
@@ -29,5 +24,3 @@ export default class CanvasGraphics {
     }
 
 }
-
-new CanvasGraphics();

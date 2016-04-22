@@ -1,6 +1,8 @@
-import RotateLeft from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array14rotateLeftMany (){
+const { RotateLeft } = array;
+
+const array14rotateLeftMany = () => {
     let data = [
         'Acorn Atom', 'BBC Micro', 'Electron', 'BBC Master', 'Acorn Archimedes',
         'A7000', 'CPC 464', '464 Plus', 'PCW', 'PC-1512', 'Imagination Machine',
@@ -14,4 +16,6 @@ export default function array14rotateLeftMany (){
     console.log('element that was moved last', element);
 
     console.log(data);
-}
+};
+
+export default array14rotateLeftMany;

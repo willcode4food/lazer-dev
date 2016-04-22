@@ -1,6 +1,8 @@
-import FindClosestInSorted from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array10findClosest (){
+const { FindClosestInSorted } = array;
+
+const array10findClosest = () => {
     //  Array must be sorted prior to using this function
 
     let data = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ];
@@ -9,4 +11,6 @@ export default function array10findClosest (){
     console.log(FindClosestInSorted(100, data)); // 20
     console.log(FindClosestInSorted(-30, data)); // 1
     console.log(FindClosestInSorted(10.9, data)); // 11
-}
+};
+
+export default array10findClosest;

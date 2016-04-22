@@ -1,10 +1,10 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Invert from 'canvas/effects/Invert.js';
-import Loader from 'loader/Loader.js';
+import { Canvas, GetContext, effects } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
 
-export default class CanvasTest {
+const { Invert } = effects;
+
+export default class Canvas14Invert {
 
     constructor () {
 
@@ -37,5 +37,3 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();

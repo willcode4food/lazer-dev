@@ -1,16 +1,19 @@
-import GetRandomElement from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array01getRandom (){
+const { GetRandomElement } = array;
+
+const array01getRandom = () => {
     let data = [
         'Acorn Atom', 'BBC Micro', 'Electron', 'BBC Master', 'Acorn Archimedes',
         'A7000', 'CPC 464', '464 Plus', 'PCW', 'PC-1512', 'Imagination Machine',
         'Apple', 'Atari 400', 'Atari ST', 'Atari TT', 'Bally Brain', 'Lynx', 'MSX',
-        'Coleco Adam', 'Sord M5', 'PET', 'VIC-20', 'Commodore 64', 'Plus/4', 'Amiga'
-    ];
+        'Coleco Adam', 'Sord M5', 'PET', 'VIC-20', 'Commodore 64', 'Plus/4', 'Amiga' ];
 
     console.log(GetRandomElement(data));
     console.log(GetRandomElement(data));
     console.log(GetRandomElement(data));
     console.log(GetRandomElement(data));
     console.log(GetRandomElement(data));
-}
+};
+
+export default array01getRandom;

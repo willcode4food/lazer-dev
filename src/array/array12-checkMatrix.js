@@ -1,12 +1,14 @@
-import CheckMatrix from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array12checkMatrix (){
+const { CheckMatrix } = array;
+
+const array12checkMatrix = () => {
     let matrix1 = [
         [ 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
         [ 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4 ],
         [ 2, 0, 1, 2, 0, 0, 1, 2, 0, 4 ],
-        [ 2, 0, 3, 4, 0, 0, 0, 3, 4, 0, 4 ],
-        [ 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4 ],
+        [ 2, 0, 3, 4, 0,0, 0, 3, 4, 0, 4 ],
+        [ 2, 0, 0, 0,  0, 0, 0, 0, 0, 0, 4 ],
         [ 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3 ]
     ];
 
@@ -24,4 +26,6 @@ export default function array12checkMatrix (){
 
     //  true because the rows are all the same length
     console.log('Valid Matrix?', CheckMatrix(matrix2));
-}
+};
+
+export default array12checkMatrix;

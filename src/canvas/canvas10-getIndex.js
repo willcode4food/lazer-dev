@@ -1,11 +1,10 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import GetImageData from 'canvas/imagedata/GetImageData.js';
-import GetIndex from 'canvas/imagedata/GetIndex.js';
-import Loader from 'loader/Loader.js';
+import { Canvas, GetContext, imagedata } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
 
-export default class CanvasTest {
+const { GetImageData, GetIndex } = imagedata;
+
+export default class Canvas10GetIndex {
 
     constructor () {
 

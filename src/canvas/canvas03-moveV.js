@@ -1,6 +1,10 @@
-import { Canvas, GetContext, BackgroundColor, AddToDOM, MoveVertical, Loader } from 'lazer';
+import { Canvas , BackgroundColor, GetContext, effects } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
 
-class Canvas03MoveV {
+const { MoveVertical } = effects;
+
+export default class Canvas03MoveV {
 
     constructor () {
 
@@ -39,4 +43,3 @@ class Canvas03MoveV {
     }
 
 }
-export default Canvas03MoveV;

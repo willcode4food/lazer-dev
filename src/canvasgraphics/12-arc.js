@@ -1,13 +1,10 @@
-import DegToRad from 'math/DegToRad.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Line from 'canvas/graphics/LineStyle.js';
-import Fill from 'canvas/graphics/Fill.js';
-import Stroke from 'canvas/graphics/Stroke.js';
-import Arc from 'canvas/graphics/Arc.js';
+import { DegToRad } from 'lazer/math';
+import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { Line, Stroke, Arc } = graphics;
+
+export default class CanvasGraphics12Arc {
 
     constructor () {
 
@@ -38,5 +35,3 @@ export default class CanvasGraphics {
     }
 
 }
-
-new CanvasGraphics();

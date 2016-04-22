@@ -1,12 +1,11 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import SetPixel from 'canvas/pixels/SetPixel.js';
-import Loader from 'loader/Loader.js';
-import Between from 'math/Between.js';
+import { Canvas, GetContext, math, BackgroundColor, pixels } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
 
-export default class CanvasTest {
+const { Between } = math;
+const { SetPixel } = pixels;
+
+export default class Canvas13SetPixelB {
 
     constructor () {
 
@@ -44,5 +43,3 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();

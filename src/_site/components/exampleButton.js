@@ -1,4 +1,4 @@
-import styles from './ExampleButton.css';
+import c from './ExampleButton.css';
 
 
 export default class ExampleButton {
@@ -11,7 +11,10 @@ export default class ExampleButton {
         if (!this.example) {
             return;
         }
+        console.log(this.example);
+        // use webpack to get a count of the number of tests
         let req = require('../../' + this.example + '/index.js');
+
         let numTests = Object.keys(req).length;
 
         let divBtnWrapper = document.createElement('div');
@@ -19,12 +22,12 @@ export default class ExampleButton {
         let linkExample = document.createElement('a');
 
         divBtnWrapper.id = this.example;
-        divBtnWrapper.className = styles.buttonWrapper;
+        divBtnWrapper.className = c.buttonWrapper;
 
-        divExampleTotal.className = styles.exampleTotal;
+        divExampleTotal.className = c.exampleTotal;
         divExampleTotal.innerHTML = numTests;
 
-        linkExample.className = styles.example;
+        linkExample.className = c.example;
         linkExample.innerHTML = this.example;
 
         divBtnWrapper.appendChild(divExampleTotal);

@@ -1,9 +1,9 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Fill from 'canvas/graphics/Fill.js';
-import DrawImage from 'canvas/DrawImage.js';
-import Loader from 'loader/Loader.js';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import Fill from 'lazer/canvas/graphics/Fill';
+import DrawImage from 'lazer/canvas/DrawImage';
+import Loader from 'lazer/loader/Loader';
 
 export default class CanvasTest {
 

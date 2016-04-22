@@ -1,4 +1,6 @@
-import { Canvas, AddToDOM, BackgroundColor, RandomDataGenerator} from 'lazer';
+import { Canvas, BackgroundColor } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { RandomDataGenerator } from 'lazer/math';
 
 const Canvas01Create = () => {
     let rnd = new RandomDataGenerator();
@@ -18,5 +20,4 @@ const Canvas01Create = () => {
         ctx.fillRect(rnd.between(0, 500), rnd.between(0, 200), 32, 32);
     }
 };
-
 export default Canvas01Create;

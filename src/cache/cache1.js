@@ -1,15 +1,17 @@
-import Loader from 'loader/Loader.js';
-import Cache from 'cache/Cache.js';
+import { Loader } from 'lazer/loader';
+import { Cache } from 'lazer/cache';
 
-let loader = new Loader();
+const cache1 = () => {
+    let loader = new Loader();
 
-loader.image('logo', 'assets/phaser1.png');
+    loader.image('logo', 'assets/phaser1.png');
 
-loader.start().then(files => loaderComplete(files));
+    loader.start().then(files => loaderComplete(files));
+};
 
-let cache = Cache();
 
 function loaderComplete (files) {
+    let cache = Cache();
 
     for (let file of files)
     {
@@ -23,5 +25,6 @@ function loaderComplete (files) {
     // game.add.sprite(100, 200, 'level1/background');
     // game.add.sprite(100, 200, 'level1>background');
 
-
 }
+
+export default cache1;

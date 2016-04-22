@@ -1,6 +1,8 @@
-import NumberArrayStep from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array17numberArrayStep (){
+const { NumberArrayStep } = array;
+
+const array17numberArrayStep = () => {
     let a = NumberArrayStep(4);
     console.log(a);
     // => [0, 1, 2, 3]
@@ -23,5 +25,7 @@ export default function array17numberArrayStep (){
 
     a = NumberArrayStep(0);
     console.log(a);
-    // => []
-}
+// => []
+};
+
+export default array17numberArrayStep;

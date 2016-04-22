@@ -1,6 +1,8 @@
-import RotateRight from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array15rotateRight (){
+const { RotateRight } = array;
+
+const array15rotateRight = () => {
     let data = [
         'Acorn Atom', 'BBC Micro', 'Electron', 'BBC Master', 'Acorn Archimedes',
         'A7000', 'CPC 464', '464 Plus', 'PCW', 'PC-1512', 'Imagination Machine',
@@ -14,4 +16,6 @@ export default function array15rotateRight (){
     console.log('element that was moved', element);
 
     console.log(data);
-}
+};
+
+export default array15rotateRight;

@@ -1,11 +1,11 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import GetPixel from 'canvas/pixels/GetPixel.js';
-import Loader from 'loader/Loader.js';
+import { Canvas , BackgroundColor, GetContext, pixels } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
 
-export default class CanvasTest {
+const { GetPixel } = pixels;
+
+
+export default class Canvas06GetPixel {
 
     constructor () {
 
@@ -44,5 +44,3 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();

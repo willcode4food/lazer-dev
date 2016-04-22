@@ -1,12 +1,9 @@
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Line from 'canvas/graphics/LineStyle.js';
-import Fill from 'canvas/graphics/Fill.js';
-import Stroke from 'canvas/graphics/Stroke.js';
-import Rectangle from 'canvas/graphics/Rectangle.js';
+import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { Line, Stroke, Rectangle } = graphics;
+
+export default class CanvasGraphics01Line {
 
     constructor () {
 
@@ -41,5 +38,3 @@ export default class CanvasGraphics {
     }
 
 }
-
-new CanvasGraphics();

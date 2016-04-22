@@ -1,10 +1,10 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Grayscale from 'canvas/effects/Grayscale.js';
-import Loader from 'loader/Loader.js';
+import { Canvas, GetContext, effects } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
 
-export default class CanvasTest {
+const { Grayscale } = effects;
+
+export default class Canvas12GrayScale {
 
     constructor () {
 
@@ -37,5 +37,3 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();

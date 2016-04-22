@@ -1,6 +1,8 @@
-import { MatrixToString, RotateMatrix } from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array07rotateMatrix (){
+const { MatrixToString, RotateMatrix } = array.matrix;
+
+const array07rotateMatrix = () => {
     let small = [
         [ 1, 1, 1, 1, 1, 1 ],
         [ 2, 0, 0, 0, 0, 4 ],
@@ -27,4 +29,6 @@ export default function array07rotateMatrix (){
     console.log('After Rotation');
 
     console.log(MatrixToString(t));
-}
+};
+
+export default array07rotateMatrix;

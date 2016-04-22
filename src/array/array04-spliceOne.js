@@ -1,6 +1,7 @@
-import SpliceOne from 'lazer';
+import { array } from 'lazer/utils';
+const { SpliceOne } = array;
 
-export default function array04spliceOne (){
+const array04spliceOne = () => {
     let data = [
         'Acorn Atom', 'BBC Micro', 'Electron', 'BBC Master', 'Acorn Archimedes',
         'A7000', 'CPC 464', '464 Plus', 'PCW', 'PC-1512', 'Imagination Machine',
@@ -19,4 +20,6 @@ export default function array04spliceOne (){
     SpliceOne(data, 22);
 
     console.log(data);
-}
+};
+
+export default array04spliceOne;

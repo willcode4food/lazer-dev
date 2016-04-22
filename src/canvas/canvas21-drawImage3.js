@@ -1,13 +1,9 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Fill from 'canvas/graphics/Fill.js';
-import DrawImage from 'canvas/DrawImage.js';
-import * as ImageRendering from 'canvas/ImageRendering.js';
-import * as Smoothing from 'canvas/Smoothing.js';
-import Loader from 'loader/Loader.js';
+import { Canvas, GetContext, DrawImage, ImageRendering, Smoothing } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { Loader } from 'lazer/loader';
+import { Fill } from 'lazer/graphics';
 
-export default class CanvasTest {
+export default class Canvas21DrawImage3 {
 
     constructor () {
 
@@ -40,5 +36,3 @@ export default class CanvasTest {
     }
 
 }
-
-new CanvasTest();

@@ -4,12 +4,10 @@
   "description": "This is a temporary development repo for [Lazer](https://github.com/photonstorm/lazer). In here we store all of our testing files as the framework is built out. Once released this repo will be deleted and useful code will be migrated to the Lazer Examples repo.",
   "main": "/build/app.js",
   "scripts": {
-    "dev": "npm install && webpack-dev-server --config webpack.config.dev.js --progress --colors",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
     "build": "npm install && webpack --config webpack.config.prod.js",
     "profile": "npm install && webpack --progress --profile --json > stats.json",
-    "dev-win": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
-    "build-win": "webpack --config webpack.config.prod.js",
-    "profile-win": "webpack --progress --profile --json > stats.json"
+    "test-chai": "mocha --compilers js:babel-core/register src/cache/cache_spec.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +30,7 @@
     "babel-polyfill": "^6.6.1",
     "babel-preset-es2015": "^6.6.0",
     "babel-runtime": "^6.6.1",
+    "chai": "^3.5.0",
     "clean-webpack-plugin": "^0.1.8",
     "css-loader": "^0.23.1",
     "eslint": "^2.7.0",
@@ -39,6 +38,7 @@
     "estraverse-fb": "^1.3.1",
     "file-loader": "^0.8.5",
     "html-webpack-plugin": "^2.9.0",
+    "mocha": "^2.4.5",
     "path": "^0.12.7",
     "postcss-loader": "^0.8.2",
     "style-loader": "^0.13.0",

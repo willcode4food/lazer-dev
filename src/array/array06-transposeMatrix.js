@@ -1,6 +1,8 @@
-import { MatrixToString, TransposeMatrix } from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array06transposeMatrix (){
+const { MatrixToString, TransposeMatrix } = array.matrix;
+
+const array06transposeMatrix = () => {
     let small = [
         [ 1, 1, 1, 1, 1, 1 ],
         [ 2, 0, 0, 0, 0, 4 ],
@@ -19,4 +21,6 @@ export default function array06transposeMatrix (){
     console.log('After TransposeMatrix');
 
     console.log(MatrixToString(t));
-}
+};
+
+export default array06transposeMatrix;

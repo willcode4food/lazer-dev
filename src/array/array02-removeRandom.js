@@ -1,6 +1,8 @@
-import RemoveRandomElement from 'lazer';
+import { array } from 'lazer/utils';
 
-export default function array02removeRandom (){
+const { RemoveRandomElement } = array;
+
+const array02removeRandom = () => {
     let data = [
         'Acorn Atom', 'BBC Micro', 'Electron', 'BBC Master', 'Acorn Archimedes',
         'A7000', 'CPC 464', '464 Plus', 'PCW', 'PC-1512', 'Imagination Machine',
@@ -14,4 +16,6 @@ export default function array02removeRandom (){
     console.log(item);
 
     console.log(data);
-}
+};
+
+export default array02removeRandom;
