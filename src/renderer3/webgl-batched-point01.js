@@ -1,6 +1,6 @@
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import WebGLBatchedPointRenderer from 'renderers/batch_point/WebGLBatchedPoint.js';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import WebGLBatchedPointRenderer from 'lazer/renderers/batch_point/WebGLBatchedPoint';
 
 let canvas = Canvas(800, 600);
 

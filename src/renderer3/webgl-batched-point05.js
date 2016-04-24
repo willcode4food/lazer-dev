@@ -1,11 +1,11 @@
-import MasterClock from 'time/MasterClock.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import WebGLBatchedPointRenderer from 'renderers/batch_point/WebGLBatchedPoint.js';
-import Vec2 from 'math/vector/vec2/Vec2.js';
-import Vec2Rotate from 'math/vector/common/Rotate.js';
-import DegToRad from 'math/DegToRad.js';
-import Between from 'math/Between.js';
+import MasterClock from 'lazer/time/MasterClock';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import WebGLBatchedPointRenderer from 'lazer/renderers/batch_point/WebGLBatchedPoint';
+import Vec2 from 'lazer/math/vector/vec2/Vec2';
+import Vec2Rotate from 'lazer/math/vector/common/Rotate';
+import DegToRad from 'lazer/math/DegToRad';
+import Between from 'lazer/math/Between';
 
 export default class Particle {
 

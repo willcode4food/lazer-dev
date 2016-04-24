@@ -1,4 +1,4 @@
-import * as Vec2Math from 'math/vector/Vec2Math.js';
+import * as Vec2Math from 'lazer/math/vector/Vec2Math';
 
 // let v = Vec2Math.buildZero();
 // console.log(v);

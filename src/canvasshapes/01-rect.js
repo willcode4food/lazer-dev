@@ -1,14 +1,11 @@
-import MainLoop from 'system/MainLoop.js';
-import Between from 'math/Between.js';
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import Clear from 'canvas/graphics/Clear.js';
-import ResetTransform from 'canvas/ResetTransform.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Rectangle from 'canvas/shapes/Rectangle.js';
+import { MainLoop } from 'lazer/system';
+import { Canvas, GetContext, ResetTransform, shapes, graphics } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { Rectangle } = shapes;
+const { Clear } = graphics;
+
+export default class CanvasShapes01Rect {
 
     constructor () {
 
@@ -54,5 +51,3 @@ export default class CanvasGraphics {
     }
 
 }
-
-new CanvasGraphics();

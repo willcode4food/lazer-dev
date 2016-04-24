@@ -1,4 +1,4 @@
-import CSStoRGB from 'graphics/color/CSStoRGB.js';
+import CSStoRGB from 'lazer/graphics/color/CSStoRGB';
 
 let { r, g, b } = CSStoRGB('wheat');
 

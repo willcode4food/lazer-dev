@@ -1,12 +1,12 @@
-import Transform from 'math/transform/2d/basic/Transform.js';
-import SetTransformToContext from 'math/transform/2d/SetTransformToContext.js';
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import CLS from 'canvas/graphics/Clear.js';
-import Loader from 'loader/Loader.js';
-import ResetTransform from 'canvas/ResetTransform.js';
+import Transform from 'lazer/math/transform/2d/basic/Transform';
+import SetTransformToContext from 'lazer/math/transform/2d/SetTransformToContext';
+import MainLoop from 'lazer/system/MainLoop';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import CLS from 'lazer/canvas/graphics/Clear';
+import Loader from 'lazer/loader/Loader';
+import ResetTransform from 'lazer/canvas/ResetTransform';
 
 class TransformTest {
 

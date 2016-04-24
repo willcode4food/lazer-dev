@@ -1,7 +1,7 @@
-import Generate from 'sound/sfxr/webaudio/Generate.js';
-import PickUpCoin from 'sound/sfxr/synths/PickUpCoin.js';
-import rnd from 'sound/sfxr/Rand.js';
-import frnd from 'sound/sfxr/RandFloat.js';
+import Generate from 'lazer/sound/sfxr/webaudio/Generate';
+import PickUpCoin from 'lazer/sound/sfxr/synths/PickUpCoin';
+import rnd from 'lazer/sound/sfxr/Rand';
+import frnd from 'lazer/sound/sfxr/RandFloat';
 
 let params = PickUpCoin(rnd, frnd);
 let sound = Generate(params);

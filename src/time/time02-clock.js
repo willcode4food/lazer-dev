@@ -1,8 +1,8 @@
-import Clock from 'time/Clock.js';
-import MasterClock from 'time/MasterClock.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
+import Clock from 'lazer/time/Clock';
+import MasterClock from 'lazer/time/MasterClock';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
 
 export default class ClockTest {
 

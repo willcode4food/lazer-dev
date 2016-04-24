@@ -1,7 +1,7 @@
-import Phaser from 'Phaser.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import MinimalRenderer from 'renderers/minimal/MinimalRenderer.js';
+import Phaser from 'lazer/Phaser';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import MinimalRenderer from 'lazer/renderers/minimal/MinimalRenderer';
 
 let canvas = Canvas(800, 400);
 

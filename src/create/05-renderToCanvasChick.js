@@ -1,6 +1,6 @@
-import RenderToCanvas from 'create/RenderToCanvas.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
+import RenderToCanvas from 'lazer/create/RenderToCanvas.js';
+import Canvas from 'lazer/canvas/Canvas.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
 
 export default class CanvasGraphics {
 

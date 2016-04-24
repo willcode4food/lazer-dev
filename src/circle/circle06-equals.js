@@ -1,5 +1,5 @@
-import Circle from 'geom/circle/Circle.js';
-import Equals from 'geom/circle/Equals.js';
+import Circle from 'lazer/geom/circle/Circle';
+import Equals from 'lazer/geom/circle/Equals';
 
 let a = Circle(0, 0, 64);
 let b = Circle(0, 0, 64.1);

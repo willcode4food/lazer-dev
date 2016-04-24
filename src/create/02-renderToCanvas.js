@@ -1,8 +1,8 @@
-import { PALETTE_ARNE } from 'create/palettes/Arne16.js';
-import RenderToCanvas from 'create/RenderToCanvas.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
+import { PALETTE_ARNE } from 'lazer/create/palettes/Arne16.js';
+import RenderToCanvas from 'lazer/create/RenderToCanvas.js';
+import Canvas from 'lazer/canvas/Canvas.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
+import BackgroundColor from 'lazer/canvas/BackgroundColor.js';
 
 export default class CanvasGraphics {
 

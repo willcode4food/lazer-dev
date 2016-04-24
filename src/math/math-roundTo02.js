@@ -1,4 +1,4 @@
-import Math from 'math/Math.js';
+import Math from 'lazer/math/Math';
 
 //  This will be a Phaser Game level class
 var math = new Math();

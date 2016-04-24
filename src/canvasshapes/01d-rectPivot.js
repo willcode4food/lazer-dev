@@ -1,12 +1,12 @@
-import MainLoop from 'system/MainLoop.js';
-import Between from 'math/Between.js';
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import Clear from 'canvas/graphics/Clear.js';
-import ResetTransform from 'canvas/ResetTransform.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Rectangle from 'canvas/shapes/Rectangle.js';
+import MainLoop from 'lazer/system/MainLoop';
+import Between from 'lazer/math/Between';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import Clear from 'lazer/canvas/graphics/Clear';
+import ResetTransform from 'lazer/canvas/ResetTransform';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
+import Rectangle from 'lazer/canvas/shapes/Rectangle';
 
 export default class CanvasGraphics {
 

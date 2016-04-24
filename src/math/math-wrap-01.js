@@ -1,4 +1,4 @@
-import Wrap from 'math/Wrap.js';
+import Wrap from 'lazer/math/Wrap';
 
 //  Wrap from 0 to 640
 

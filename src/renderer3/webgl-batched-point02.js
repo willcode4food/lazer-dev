@@ -1,8 +1,8 @@
-import MasterClock from 'time/MasterClock.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import WebGLBatchedPointRenderer from 'renderers/batch_point/WebGLBatchedPoint.js';
-import Vec2 from 'math/vector/Vec2.js';
+import MasterClock from 'lazer/time/MasterClock';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import WebGLBatchedPointRenderer from 'lazer/renderers/batch_point/WebGLBatchedPoint';
+import Vec2 from 'lazer/math/vector/Vec2';
 
 export default class PointTest {
 

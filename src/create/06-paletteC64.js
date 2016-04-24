@@ -1,7 +1,7 @@
-import { PALETTE_C64 } from 'create/palettes/C64.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import GetContext from 'canvas/GetContext.js';
+import { PALETTE_C64 } from 'lazer/create/palettes/C64.js';
+import Canvas from 'lazer/canvas/Canvas.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
+import GetContext from 'lazer/canvas/GetContext.js';
 
 export default class CanvasGraphics {
 

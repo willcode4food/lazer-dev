@@ -1,6 +1,6 @@
-import Grid from 'create/Grid.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
+import Grid from 'lazer/create/Grid.js';
+import Canvas from 'lazer/canvas/Canvas.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
 
 export default class CanvasGraphics {
 

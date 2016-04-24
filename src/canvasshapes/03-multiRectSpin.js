@@ -1,8 +1,8 @@
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Rectangle from 'canvas/shapes/Rectangle.js';
+import MainLoop from 'lazer/system/MainLoop';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
+import Rectangle from 'lazer/canvas/shapes/Rectangle';
 
 export default class CanvasGraphics {
 

@@ -1,5 +1,5 @@
-import Loader from 'loader/Loader.js';
-import TexturePackerJSONArray from 'texture/parsers/TexturePackerJSONArray.js';
+import Loader from 'lazer/loader/Loader';
+import TexturePackerJSONArray from 'lazer/texture/parsers/TexturePackerJSONArray';
 
 let loader = new Loader();
 

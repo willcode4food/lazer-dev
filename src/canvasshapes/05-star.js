@@ -1,8 +1,8 @@
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Star from 'canvas/shapes/Star.js';
+import MainLoop from 'lazer/system/MainLoop';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
+import Star from 'lazer/canvas/shapes/Star';
 
 export default class CanvasGraphics {
 

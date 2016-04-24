@@ -1,7 +1,7 @@
-import { PALETTE_CGA } from 'create/palettes/CGA.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import GetContext from 'canvas/GetContext.js';
+import { PALETTE_CGA } from 'lazer/create/palettes/CGA.js';
+import Canvas from 'lazer/canvas/Canvas.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
+import GetContext from 'lazer/canvas/GetContext.js';
 
 export default class CanvasGraphics {
 

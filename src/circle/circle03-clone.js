@@ -1,5 +1,5 @@
-import Circle from 'geom/circle/Circle.js';
-import Clone from 'geom/circle/Clone.js';
+import Circle from 'lazer/geom/circle/Circle';
+import Clone from 'lazer/geom/circle/Clone';
 
 let a = Circle(50, 100, 32);
 

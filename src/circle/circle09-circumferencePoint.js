@@ -1,13 +1,13 @@
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Line from 'canvas/graphics/LineStyle.js';
-import Stroke from 'canvas/graphics/Stroke.js';
-import CanvasCircle from 'canvas/graphics/Circle.js';
-import SetPixel from 'canvas/pixels/SetPixel.js';
-import Circle from 'geom/circle/Circle.js';
-import CircumferencePoint from 'geom/circle/CircumferencePoint.js';
-import DegToRad from 'math/DegToRad.js';
-import Between from 'math/Between.js';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import Line from 'lazer/canvas/graphics/LineStyle';
+import Stroke from 'lazer/canvas/graphics/Stroke';
+import CanvasCircle from 'lazer/canvas/graphics/Circle';
+import SetPixel from 'lazer/canvas/pixels/SetPixel';
+import Circle from 'lazer/geom/circle/Circle';
+import CircumferencePoint from 'lazer/geom/circle/CircumferencePoint';
+import DegToRad from 'lazer/math/DegToRad';
+import Between from 'lazer/math/Between';
 
 export default class CircleTest {
 

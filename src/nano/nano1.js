@@ -1,8 +1,8 @@
-import Config from 'config/Config.js';
-import Parent from 'config/settings/Parent.js';
-import GameTitle from 'config/settings/GameTitle.js';
-import State from 'config/settings/State.js';
-import Game from 'game/nano/Game.js';
+import Config from 'lazer/config/Config';
+import Parent from 'lazer/config/settings/Parent';
+import GameTitle from 'lazer/config/settings/GameTitle';
+import State from 'lazer/config/settings/State';
+import Game from 'lazer/game/nano/Game';
 
 let game = new Game(
     Config(

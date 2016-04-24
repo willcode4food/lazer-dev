@@ -1,12 +1,12 @@
-import RenderToCanvas from 'create/RenderToCanvas.js';
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Line from 'canvas/graphics/LineStyle.js';
-import FillGradient from 'canvas/graphics/FillGradient.js';
-import Stroke from 'canvas/graphics/Stroke.js';
-import Rectangle from 'canvas/graphics/Rectangle.js';
-import LinearGradient, { addColor } from 'canvas/graphics/LinearGradient.js';
+import RenderToCanvas from 'lazer/create/RenderToCanvas.js';
+import Canvas from 'lazer/canvas/Canvas.js';
+import GetContext from 'lazer/canvas/GetContext.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
+import Line from 'lazer/canvas/graphics/LineStyle.js';
+import FillGradient from 'lazer/canvas/graphics/FillGradient.js';
+import Stroke from 'lazer/canvas/graphics/Stroke.js';
+import Rectangle from 'lazer/canvas/graphics/Rectangle.js';
+import LinearGradient, { addColor } from 'lazer/canvas/graphics/LinearGradient.js';
 
 export default class CanvasGraphics {
 

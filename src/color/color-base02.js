@@ -1,4 +1,4 @@
-import Color from 'graphics/color/BaseColor.js';
+import Color from 'lazer/graphics/color/BaseColor';
 
 let red = new Color(255);
 

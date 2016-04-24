@@ -17,7 +17,7 @@ export default class Canvas02MoveH {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = 'http://projectneptune.blob.core.windows.net/lazer/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 

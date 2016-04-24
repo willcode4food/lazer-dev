@@ -1,7 +1,7 @@
-import Generate from 'sound/sfxr/webaudio/Generate.js';
-import Random from 'sound/sfxr/synths/Random.js';
-import rnd from 'sound/sfxr/Rand.js';
-import frnd from 'sound/sfxr/RandFloat.js';
+import Generate from 'lazer/sound/sfxr/webaudio/Generate';
+import Random from 'lazer/sound/sfxr/synths/Random';
+import rnd from 'lazer/sound/sfxr/Rand';
+import frnd from 'lazer/sound/sfxr/RandFloat';
 
 let params = Random(rnd, frnd);
 let sound = Generate(params);

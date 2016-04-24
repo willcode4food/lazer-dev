@@ -1,6 +1,6 @@
-import Key from 'input/keyboard/Key.js';
-import AddKeyDown from 'input/keyboard/events/AddKeyDown.js';
-import ProcessKeyDown from 'input/keyboard/events/ProcessKeyDown.js';
+import Key from 'lazer/input/keyboard/Key';
+import AddKeyDown from 'lazer/input/keyboard/events/AddKeyDown';
+import ProcessKeyDown from 'lazer/input/keyboard/events/ProcessKeyDown';
 
 //  Create 3 keys
 let A = Key('a');

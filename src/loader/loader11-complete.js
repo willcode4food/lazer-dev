@@ -1,4 +1,4 @@
-import Loader from 'loader/Loader.js';
+import Loader from 'lazer/loader/Loader';
 
 export default class LoaderTest {
 

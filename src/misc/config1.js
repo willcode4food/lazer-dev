@@ -1,6 +1,6 @@
-import Config from 'config/Config.js';
-import Dimensions from 'config/settings/Dimensions.js';
-import Transparent from 'config/settings/Transparent.js';
+import Config from 'lazer/config/Config';
+import Dimensions from 'lazer/config/settings/Dimensions';
+import Transparent from 'lazer/config/settings/Transparent';
 
 let config = Config(
     Dimensions(1024, 768),

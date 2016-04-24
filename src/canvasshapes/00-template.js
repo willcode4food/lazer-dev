@@ -1,9 +1,8 @@
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
+import { MainLoop } from 'lazer/system';
+import { Canvas, BackgroundColor } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+export default class CanvasShapes00Template {
 
     constructor () {
 
@@ -44,5 +43,3 @@ export default class CanvasGraphics {
     }
 
 }
-
-new CanvasGraphics();

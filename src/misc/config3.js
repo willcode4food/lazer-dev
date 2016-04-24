@@ -1,10 +1,10 @@
-import Config from 'config/Config.js';
-import Dimensions from 'config/settings/Dimensions.js';
-import Transparent from 'config/settings/Transparent.js';
-import Parent from 'config/settings/Parent.js';
-import GameTitle from 'config/settings/GameTitle.js';
-import DisableWebAudio from 'config/settings/DisableWebAudio.js';
-import Banner from 'utils/Banner.js';
+import Config from 'lazer/config/Config';
+import Dimensions from 'lazer/config/settings/Dimensions';
+import Transparent from 'lazer/config/settings/Transparent';
+import Parent from 'lazer/config/settings/Parent';
+import GameTitle from 'lazer/config/settings/GameTitle';
+import DisableWebAudio from 'lazer/config/settings/DisableWebAudio';
+import Banner from 'lazer/utils/Banner';
 
 let config = Config(
     Transparent(false),

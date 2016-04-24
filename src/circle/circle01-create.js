@@ -1,4 +1,4 @@
-import Circle from 'geom/circle/Circle.js';
+import Circle from 'lazer/geom/circle/Circle';
 
 let a = Circle(50, 100, 32);
 let b = Circle(200, 500, 1.5);

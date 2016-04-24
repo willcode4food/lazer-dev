@@ -1,8 +1,8 @@
-import Grid from 'create/Grid.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import FillGradient from 'canvas/graphics/FillGradient.js';
-import Rectangle from 'canvas/graphics/Rectangle.js';
-import LinearGradient from 'canvas/graphics/LinearGradient.js';
+import Grid from 'lazer/create/Grid.js';
+import AddToDOM from 'lazer/dom/AddToDOM.js';
+import FillGradient from 'lazer/canvas/graphics/FillGradient.js';
+import Rectangle from 'lazer/canvas/graphics/Rectangle.js';
+import LinearGradient from 'lazer/canvas/graphics/LinearGradient.js';
 
 export default class CanvasGraphics {
 

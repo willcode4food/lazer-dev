@@ -1,12 +1,12 @@
-import Key from 'input/keyboard/Key.js';
-import * as KeyDown from 'input/keyboard/events/KeyDown.js';
-import * as KeyUp from 'input/keyboard/events/KeyUp.js';
-import * as ProcessKeyEvent from 'input/keyboard/ProcessKeyEvent.js';
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import Star from 'canvas/shapes/Star.js';
+import Key from 'lazer/input/keyboard/Key';
+import * as KeyDown from 'lazer/input/keyboard/events/KeyDown';
+import * as KeyUp from 'lazer/input/keyboard/events/KeyUp';
+import * as ProcessKeyEvent from 'lazer/input/keyboard/ProcessKeyEvent';
+import MainLoop from 'lazer/system/MainLoop';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
+import Star from 'lazer/canvas/shapes/Star';
 
 export default class CanvasGraphics {
 

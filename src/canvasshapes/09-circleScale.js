@@ -1,11 +1,11 @@
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Clear from 'canvas/graphics/Clear.js';
-import ResetTransform from 'canvas/ResetTransform.js';
-import Circle from 'canvas/shapes/Circle.js';
-import Rectangle from 'canvas/shapes/Rectangle.js';
+import MainLoop from 'lazer/system/MainLoop';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import Clear from 'lazer/canvas/graphics/Clear';
+import ResetTransform from 'lazer/canvas/ResetTransform';
+import Circle from 'lazer/canvas/shapes/Circle';
+import Rectangle from 'lazer/canvas/shapes/Rectangle';
 
 export default class CanvasGraphics {
 

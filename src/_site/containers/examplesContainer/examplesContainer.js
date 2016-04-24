@@ -1,11 +1,11 @@
 import c from './examplesContainer.css';
-import { ExampleButton } from '../components';
+import { ExampleButton } from '../../components/exampleButton';
 
 export default class ExamplesContainer {
     render(divRoot, examples = []) {
         let divContainer = document.createElement('div');
 
-        divContainer.className = c.clr;
+        divContainer.className = c.container;
         examples.map( (ex) => {
             let myBtn = new ExampleButton;
             myBtn.properties = {

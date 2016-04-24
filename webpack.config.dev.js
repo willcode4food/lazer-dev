@@ -24,11 +24,11 @@ module.exports = merge(base.common, {
 					loader: 'babel',
 					exclude: ['/node_modules', '/src/lib', '/build']
 				},
-				{
-					test: /\.js$/,
-					loader: 'eslint-loader',
-					exclude: ['/node_modules', '/src/lib', '/build']
-				},
+				// {
+				// 	test: /\.js$/,
+				// 	loader: 'eslint-loader',
+				// 	exclude: ['/node_modules', '/src/lib', '/build']
+				// },
 				{
 					test: /\.css$/,
 					loader: 'style!css?modules&sourceMap&localIdentName=[local]_[hash:base64:5]&importLoaders=1!postcss-loader',

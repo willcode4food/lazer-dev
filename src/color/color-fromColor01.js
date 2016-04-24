@@ -1,4 +1,4 @@
-import Color from 'graphics/color/BaseColor.js';
+import Color from 'lazer/graphics/color/BaseColor';
 
 let purple = new Color.create(0xff00ff);
 let mold = new Color.create(0x39b54a);

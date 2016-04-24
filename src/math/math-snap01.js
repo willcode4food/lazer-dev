@@ -1,4 +1,4 @@
-import * as MathSnap from 'math/SnapTo.js';
+import * as MathSnap from 'lazer/math/SnapTo';
 
 //  Should snap to 10
 console.log(MathSnap.to(12, 5));

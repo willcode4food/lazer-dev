@@ -1,4 +1,4 @@
-import Loader from 'loader/Loader.js';
+import Loader from 'lazer/loader/Loader';
 
 let loader = new Loader();
 

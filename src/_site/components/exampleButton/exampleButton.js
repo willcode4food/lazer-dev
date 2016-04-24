@@ -11,9 +11,8 @@ export default class ExampleButton {
         if (!this.example) {
             return;
         }
-        console.log(this.example);
         // use webpack to get a count of the number of tests
-        let req = require('../../' + this.example + '/index.js');
+        let req = require('../../../' + this.example + '/index.js');
 
         let numTests = Object.keys(req).length;
 

@@ -1,12 +1,12 @@
-import Transform2D from 'components/Transform2D.js';
-import MainLoop from 'system/MainLoop.js';
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import CLS from 'canvas/graphics/Clear.js';
-import DrawImage from 'canvas/DrawImage.js';
-import SetTransformFromMatrix from 'canvas/SetTransformFromMatrix.js';
-import Loader from 'loader/Loader.js';
+import Transform2D from 'lazer/components/Transform2D';
+import MainLoop from 'lazer/system/MainLoop';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import CLS from 'lazer/canvas/graphics/Clear';
+import DrawImage from 'lazer/canvas/DrawImage';
+import SetTransformFromMatrix from 'lazer/canvas/SetTransformFromMatrix';
+import Loader from 'lazer/loader/Loader';
 
 export default class TransformTest {
 

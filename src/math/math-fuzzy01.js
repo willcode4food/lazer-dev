@@ -1,4 +1,4 @@
-import * as FuzzyMath from 'math/Fuzzy.js';
+import * as FuzzyMath from 'lazer/math/Fuzzy';
 
 console.log(FuzzyMath.equal(1, 2));
 console.log(FuzzyMath.equal(1, 1));

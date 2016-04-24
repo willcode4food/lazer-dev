@@ -1,10 +1,10 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import Clear from 'canvas/graphics/Clear.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
-import MainLoop from 'system/MainLoop.js';
-import Grid from 'create/Grid.js';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import Clear from 'lazer/canvas/graphics/Clear';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
+import MainLoop from 'lazer/system/MainLoop';
+import Grid from 'lazer/create/Grid';
 
 export default class FX {
 

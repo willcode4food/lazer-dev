@@ -1,4 +1,4 @@
-import * as Angle from 'math/Angle.js';
+import * as Angle from 'lazer/math/Angle';
 
 //  45 degrees
 console.log(Angle.between(100, 100, 300, 300) * (180 / Math.PI));

@@ -1,7 +1,7 @@
-import Generate from 'sound/sfxr/webaudio/Generate.js';
-import PushSound from 'sound/sfxr/synths/PushSound.js';
-import rnd from 'sound/sfxr/Rand.js';
-import frnd from 'sound/sfxr/RandFloat.js';
+import Generate from 'lazer/sound/sfxr/webaudio/Generate';
+import PushSound from 'lazer/sound/sfxr/synths/PushSound';
+import rnd from 'lazer/sound/sfxr/Rand';
+import frnd from 'lazer/sound/sfxr/RandFloat';
 
 let params = PushSound(rnd, frnd);
 let sound = Generate(params);

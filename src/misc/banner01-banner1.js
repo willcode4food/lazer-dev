@@ -1,3 +1,3 @@
-import Banner from 'utils/Banner.js';
+import Banner from 'lazer/utils/Banner';
 
 Banner();

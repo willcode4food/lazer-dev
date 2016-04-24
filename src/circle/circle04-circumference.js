@@ -1,5 +1,5 @@
-import Circle from 'geom/circle/Circle.js';
-import Circumference from 'geom/circle/Circumference.js';
+import Circle from 'lazer/geom/circle/Circle';
+import Circumference from 'lazer/geom/circle/Circumference';
 
 let a = Circle(0, 0, 64);
 

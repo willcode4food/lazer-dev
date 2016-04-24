@@ -1,8 +1,8 @@
-import Color from 'graphics/color/BaseColor.js';
+import Color from 'lazer/graphics/color/BaseColor';
 
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import BackgroundColor from 'canvas/BackgroundColor.js';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import BackgroundColor from 'lazer/canvas/BackgroundColor';
 
 let canvas = Canvas(512, 512);
 

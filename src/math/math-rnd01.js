@@ -1,4 +1,4 @@
-import RandomDataGenerator from 'math/RandomDataGenerator.js';
+import RandomDataGenerator from 'lazer/math/RandomDataGenerator';
 
 var seed = '!rnd,1,0.005559559212997556,0.5825409316457808,0.5391019422095269';
 // var seed = [(Date.now() * Math.random()).toString()];

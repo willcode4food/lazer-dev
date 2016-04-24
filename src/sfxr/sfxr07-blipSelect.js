@@ -1,7 +1,7 @@
-import Generate from 'sound/sfxr/webaudio/Generate.js';
-import BlipSelect from 'sound/sfxr/synths/BlipSelect.js';
-import rnd from 'sound/sfxr/Rand.js';
-import frnd from 'sound/sfxr/RandFloat.js';
+import Generate from 'lazer/sound/sfxr/webaudio/Generate';
+import BlipSelect from 'lazer/sound/sfxr/synths/BlipSelect';
+import rnd from 'lazer/sound/sfxr/Rand';
+import frnd from 'lazer/sound/sfxr/RandFloat';
 
 let params = BlipSelect(rnd, frnd);
 let sound = Generate(params);

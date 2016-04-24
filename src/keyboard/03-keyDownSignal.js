@@ -1,7 +1,7 @@
 
-import Key from 'input/keyboard/Key.js';
-import AddKeyDown from 'input/keyboard/events/AddKeyDown.js';
-import ProcessKeyDown, { onDown } from 'input/keyboard/events/ProcessKeyDown.js';
+import Key from 'lazer/input/keyboard/Key';
+import AddKeyDown from 'lazer/input/keyboard/events/AddKeyDown';
+import ProcessKeyDown, { onDown } from 'lazer/input/keyboard/events/ProcessKeyDown';
 
 function fire (event) {
 

@@ -1,5 +1,5 @@
-import DegToRad from 'math/DegToRad.js';
-import RadToDeg from 'math/RadToDeg.js';
+import DegToRad from 'lazer/math/DegToRad';
+import RadToDeg from 'lazer/math/RadToDeg';
 
 console.log(DegToRad(45));
 console.log(DegToRad(90));

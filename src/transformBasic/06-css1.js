@@ -1,9 +1,9 @@
-import BaseTransform from 'math/transform/2d/basic/BaseTransform.js';
-import SetTransformToCSS from 'math/transform/2d/SetTransformToCSS.js';
-import MainLoop from 'system/MainLoop.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import Loader from 'loader/Loader.js';
-import Between from 'math/Between.js';
+import BaseTransform from 'lazer/math/transform/2d/basic/BaseTransform';
+import SetTransformToCSS from 'lazer/math/transform/2d/SetTransformToCSS';
+import MainLoop from 'lazer/system/MainLoop';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import Loader from 'lazer/loader/Loader';
+import Between from 'lazer/math/Between';
 
 class Sprite extends BaseTransform {
 

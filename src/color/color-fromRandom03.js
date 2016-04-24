@@ -1,4 +1,4 @@
-import RandomRGB from 'graphics/color/RandomRGB.js';
+import RandomRGB from 'lazer/graphics/color/RandomRGB';
 
 let { r, g, b } = RandomRGB();
 

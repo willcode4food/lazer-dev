@@ -1,10 +1,10 @@
-import Canvas from 'canvas/Canvas.js';
-import GetContext from 'canvas/GetContext.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import GetImageData from 'canvas/imagedata/GetImageData.js';
-import PutImageData from 'canvas/imagedata/PutImageData.js';
-import EdgeDetectDark from 'canvas/filters/EdgeDetectDark.js';
-import Loader from 'loader/Loader.js';
+import Canvas from 'lazer/canvas/Canvas';
+import GetContext from 'lazer/canvas/GetContext';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import GetImageData from 'lazer/canvas/imagedata/GetImageData';
+import PutImageData from 'lazer/canvas/imagedata/PutImageData';
+import EdgeDetectDark from 'lazer/canvas/filters/EdgeDetectDark';
+import Loader from 'lazer/loader/Loader';
 
 export default class CanvasTest {
 

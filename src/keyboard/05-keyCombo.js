@@ -1,7 +1,7 @@
 
-import AddKeyDown from 'input/keyboard/events/AddKeyDown.js';
-import KeyCombo from 'input/keyboard/combo/KeyCombo.js';
-import ProcessKeyCombo from 'input/keyboard/combo/ProcessKeyCombo.js';
+import AddKeyDown from 'lazer/input/keyboard/events/AddKeyDown';
+import KeyCombo from 'lazer/input/keyboard/combo/KeyCombo';
+import ProcessKeyCombo from 'lazer/input/keyboard/combo/ProcessKeyCombo';
 
 function checkCombo (event, combo) {
 

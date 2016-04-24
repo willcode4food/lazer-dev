@@ -1,4 +1,4 @@
-import Transform2D from 'components/Transform2D.js';
+import Transform2D from 'lazer/components/Transform2D';
 
 let peter = new Transform2D();
 let paul = new Transform2D();

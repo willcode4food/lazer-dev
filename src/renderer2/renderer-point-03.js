@@ -1,7 +1,7 @@
-import Phaser from 'Phaser.js';
-import Canvas from 'canvas/Canvas.js';
-import AddToDOM from 'dom/AddToDOM.js';
-import PointRenderer from 'renderers/point/PointRendererF.js';
+import Phaser from 'lazer/Phaser';
+import Canvas from 'lazer/canvas/Canvas';
+import AddToDOM from 'lazer/dom/AddToDOM';
+import PointRenderer from 'lazer/renderers/point/PointRendererF';
 
 let canvas = Canvas(800, 600);
 

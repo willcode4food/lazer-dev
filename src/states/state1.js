@@ -1,5 +1,5 @@
-import State from 'state/State.js';
-import StateManager from 'state/StateManager.js';
+import State from 'lazer/state/State';
+import StateManager from 'lazer/state/StateManager';
 
 let mainMenu = State( { name: 'MainMenu', init: init, preload: preload, create: create });
 

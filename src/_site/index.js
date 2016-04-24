@@ -1,7 +1,11 @@
-import { ExamplesContainer } from './containers';
+import { ExamplesContainer } from './containers/examplesContainer';
+import { ExampleItemsContainer } from './containers/exampleItemsContainer';
 
 let exContainer = new ExamplesContainer;
-let divGame = document.querySelector('#game');
-exContainer.render(divGame, ['array','cache','canvas','canvasgraphics']);
+let exItemContainer = new ExampleItemsContainer;
+let exArray =['array','cache','canvas','canvasgraphics', 'canvasshapes'];
 
-// console.log('what');
+let divGame = document.querySelector('#game');
+
+exItemContainer.render(divGame, 'array');
+exContainer.render(divGame, exArray);
