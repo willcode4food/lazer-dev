@@ -1,7 +1,9 @@
 import c from './ExampleButton.css';
 
-
 export default class ExampleButton {
+    constructor(){
+        this.exampleLinks = [];
+    }
     set properties(props){
         this.example = props.example;
         this.target = props.target ? props.target : 'div';
@@ -15,22 +17,20 @@ export default class ExampleButton {
         let req = require('../../../' + this.example + '/index.js');
 
         let numTests = Object.keys(req).length;
+        this.divBtnWrapper = document.createElement('div');
+        this.divBtnWrapper.className = c.buttonWrapper;
 
-        let divBtnWrapper = document.createElement('div');
-        let divExampleTotal = document.createElement('div');
-        let linkExample = document.createElement('a');
+        this.divExampleTotal = document.createElement('div');
+        this.divExampleTotal.className = c.exampleTotal;
+        this.divExampleTotal.innerHTML = numTests;
 
-        divBtnWrapper.id = this.example;
-        divBtnWrapper.className = c.buttonWrapper;
+        this.linkExample = document.createElement('a');
+        this.linkExample.id = this.example;
+        this.linkExample.className = c.example;
+        this.linkExample.innerHTML = this.example;
 
-        divExampleTotal.className = c.exampleTotal;
-        divExampleTotal.innerHTML = numTests;
-
-        linkExample.className = c.example;
-        linkExample.innerHTML = this.example;
-
-        divBtnWrapper.appendChild(divExampleTotal);
-        divBtnWrapper.appendChild(linkExample);
-        container.appendChild(divBtnWrapper);
+        this.divBtnWrapper.appendChild(this.divExampleTotal);
+        this.divBtnWrapper.appendChild(this.linkExample);
+        container.appendChild(this.divBtnWrapper);
     }
 }

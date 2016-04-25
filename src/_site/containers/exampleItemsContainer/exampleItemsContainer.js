@@ -1,22 +1,20 @@
 import c from './exampleItemsContainer.css';
-import { ExampleItemButton } from '../../components/exampleItemButton';
 
 export default class ExampleItemsContainer {
-    render(divRoot, exampleItem = '') {
-        let divContainer = document.createElement('div');
-        let req = require('../../../' + exampleItem + '/index.js');
-
-        let exampleItems = Object.keys(req);
-
-        divContainer.className = c.container;
-        exampleItems.map( (ex) => {
-            let myBtn = new ExampleItemButton;
-            myBtn.properties = {
-                exampleItem: ex
-            };
-            myBtn.render(divContainer);
+    constructor(divRoot){
+        this.divRoot = divRoot;
+        this.divContainer = document.createElement('div');
+        this.divContainer.id = 'exampleItemsContainer';
+        this.divContainer.className = c.container;
+        this.divRoot.appendChild(this.divContainer);
+        this.exampleItemButtons = [];
+    }
+    clear(){
+        let containerDiv = this.divContainer;
+        this.exampleItemButtons.map((button)=>{
+            containerDiv.removeChild(button.linkExampleItem);
         });
-        divRoot.appendChild(divContainer);
+        this.exampleItemButtons = [];
     }
 
 }
