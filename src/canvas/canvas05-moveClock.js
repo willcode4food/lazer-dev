@@ -4,9 +4,9 @@ import { Loader } from 'lazer/loader';
 import { MasterClock } from 'lazer/time';
 
 const { Move } = effects;
-const { Clock } =  MasterClock;
+const  Clock =  MasterClock;
 
-export default class Canvas05MoveClock {
+class Canvas05 {
 
     constructor () {
 
@@ -19,7 +19,7 @@ export default class Canvas05MoveClock {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -47,3 +47,9 @@ export default class Canvas05MoveClock {
     }
 
 }
+
+const Canvas05MoveClock = () => {
+    new Canvas05();
+};
+
+export default Canvas05MoveClock;

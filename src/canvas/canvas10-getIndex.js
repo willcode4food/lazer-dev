@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { GetImageData, GetIndex } = imagedata;
 
-export default class Canvas10GetIndex {
+class Canvas10 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas10GetIndex {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -48,4 +48,8 @@ export default class Canvas10GetIndex {
 
 }
 
-new CanvasTest();
+const Canvas10GetIndex = () => {
+    new Canvas10();
+};
+
+export default Canvas10GetIndex;

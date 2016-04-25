@@ -1,11 +1,11 @@
-import { Canvas, GetContext, imagedata } from 'lazer/canvas';
+import { Canvas, GetContext, effects } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 import { Loader } from 'lazer/loader';
 
-const { ReplaceRGB } = imagedata;
+const { ReplaceRGB } = effects;
 
 
-export default class Canvas20ReplaceRGB {
+class Canvas20 {
 
     constructor () {
 
@@ -15,7 +15,7 @@ export default class Canvas20ReplaceRGB {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -37,3 +37,9 @@ export default class Canvas20ReplaceRGB {
     }
 
 }
+
+const Canvas20ReplaceRGB = () => {
+    new Canvas20();
+};
+
+export default Canvas20ReplaceRGB;

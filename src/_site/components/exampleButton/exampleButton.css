@@ -19,6 +19,13 @@
     border-bottom-right-radius: 5px;    
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #156785, 0px 10px 5px #999;
     user-select: none;
+    z-index: 1;
+}
+.example:active {
+    position: relative;
+    top: 3px;
+    background-image: linear-gradient(bottom, rgb(62,184,229) 0%, rgb(44,160,202) 100%);
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #156785, 0px 5px 3px #999;
 }
 .exampleTotal {
     font-family: 'Open Sans', sans-serif;
@@ -41,4 +48,9 @@
     border-bottom-left-radius: 5px;    
     box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 0px 10px 5px #999 ;
     user-select: none;
+    z-index: 2;
+}
+.exampleTotal:active::before {
+    top: -3px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
 }

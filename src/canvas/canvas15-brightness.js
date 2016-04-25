@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { Brightness } = effects;
 
-export default class Canvas15Brightness {
+class Canvas15 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas15Brightness {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -37,3 +37,9 @@ export default class Canvas15Brightness {
     }
 
 }
+
+const Canvas15Brightness = () => {
+    new Canvas15();
+};
+
+export default Canvas15Brightness;

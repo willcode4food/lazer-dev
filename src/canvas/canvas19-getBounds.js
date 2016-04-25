@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { GetImageData, GetBounds } = imagedata;
 
-export default class Canvas19GetBounds {
+class Canvas19 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas19GetBounds {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -42,3 +42,9 @@ export default class Canvas19GetBounds {
     }
 
 }
+
+const Canvas19GetBounds = () => {
+    new Canvas19();
+};
+
+export default Canvas19GetBounds;

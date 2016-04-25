@@ -10,9 +10,8 @@ export default class ExampleItemsContainer {
         this.exampleItemButtons = [];
     }
     clear(){
-        let containerDiv = this.divContainer;
         this.exampleItemButtons.map((button)=>{
-            containerDiv.removeChild(button.linkExampleItem);
+            this.divContainer.removeChild(button.linkExampleItem);
         });
         this.exampleItemButtons = [];
     }

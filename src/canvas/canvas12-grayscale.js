@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { Grayscale } = effects;
 
-export default class Canvas12GrayScale {
+class Canvas12 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas12GrayScale {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -37,3 +37,9 @@ export default class Canvas12GrayScale {
     }
 
 }
+
+const Canvas12GrayScale = () => {
+    new Canvas12();
+};
+
+export default Canvas12GrayScale;

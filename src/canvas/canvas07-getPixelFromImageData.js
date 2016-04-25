@@ -1,10 +1,10 @@
-import { Canvas , BackgroundColor, GetContext, pixels } from 'lazer/canvas';
+import { Canvas , BackgroundColor, GetContext, imagedata } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 import { Loader } from 'lazer/loader';
 
-const { GetPixel } = pixels;
+const { GetPixel } = imagedata;
 
-export default class Canvas07GetPixelFromImageData {
+class Canvas07 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas07GetPixelFromImageData {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -46,3 +46,9 @@ export default class Canvas07GetPixelFromImageData {
 
     }
 }
+
+const Canvas07GetPixelFromImageData = () => {
+    new Canvas07();
+};
+
+export default Canvas07GetPixelFromImageData;

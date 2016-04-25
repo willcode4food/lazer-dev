@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { GetImageData, Process } = imagedata;
 
-export default class Canvas11ProcessPixels {
+class Canvas11 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas11ProcessPixels {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -55,3 +55,8 @@ export default class Canvas11ProcessPixels {
     }
 
 }
+const Canvas11ProcessPixels = () => {
+    new Canvas11();
+};
+
+export default Canvas11ProcessPixels;

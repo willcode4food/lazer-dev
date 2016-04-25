@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { Invert } = effects;
 
-export default class Canvas14Invert {
+class Canvas14 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas14Invert {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -37,3 +37,9 @@ export default class Canvas14Invert {
     }
 
 }
+
+const Canvas14Invert = () => {
+    new Canvas14();
+};
+
+export default Canvas14Invert;

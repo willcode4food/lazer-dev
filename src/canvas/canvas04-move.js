@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { Move } = effects;
 
-export default class Canvas04Move {
+class Canvas04 {
 
     constructor () {
 
@@ -17,7 +17,7 @@ export default class Canvas04Move {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -40,3 +40,8 @@ export default class Canvas04Move {
     }
 
 }
+const Canvas04Move = () => {
+    new Canvas04();
+};
+
+export default Canvas04Move;

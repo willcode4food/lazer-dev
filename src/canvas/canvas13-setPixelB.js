@@ -1,11 +1,11 @@
-import { Canvas, GetContext, math, BackgroundColor, pixels } from 'lazer/canvas';
+import { Canvas, GetContext, BackgroundColor, pixels } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 import { Loader } from 'lazer/loader';
+import { Between } from 'lazer/math';
 
-const { Between } = math;
 const { SetPixel } = pixels;
 
-export default class Canvas13SetPixelB {
+class Canvas13 {
 
     constructor () {
 
@@ -17,7 +17,7 @@ export default class Canvas13SetPixelB {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -43,3 +43,9 @@ export default class Canvas13SetPixelB {
     }
 
 }
+
+const Canvas13SetPixelB = () => {
+    new Canvas13;
+};
+
+export default Canvas13SetPixelB;

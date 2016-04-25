@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { Threshold } = effects;
 
-export default class Canvas16Threshold {
+class Canvas16 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas16Threshold {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -37,3 +37,9 @@ export default class Canvas16Threshold {
     }
 
 }
+
+const Canvas16Threshold = () => {
+    new Canvas16();
+};
+
+export default Canvas16Threshold;

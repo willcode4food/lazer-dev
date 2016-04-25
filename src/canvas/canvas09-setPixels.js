@@ -5,7 +5,7 @@ import { Loader } from 'lazer/loader';
 const { SetPixels } = pixels;
 const { GetImageData } = imagedata;
 
-export default class Canvas09SetPixels {
+class Canvas09 {
 
     constructor () {
 
@@ -17,7 +17,7 @@ export default class Canvas09SetPixels {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -54,4 +54,8 @@ export default class Canvas09SetPixels {
 
 }
 
-new CanvasTest();
+const Canvas09SetPixels = () => {
+    new Canvas09();
+};
+
+export default Canvas09SetPixels;

@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { MoveHorizontal } = effects;
 
-export default class Canvas02MoveH {
+class Canvas02 {
 
     constructor () {
 
@@ -43,3 +43,8 @@ export default class Canvas02MoveH {
     }
 
 }
+const Canvas02MoveH = () => {
+    new Canvas02();
+};
+
+export default Canvas02MoveH;

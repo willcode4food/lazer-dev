@@ -10,6 +10,7 @@ export default class ExampleItemButton {
 
     }
     render(container) {
+        this.linkExampleItem.id = this.exampleItem;
         this.linkExampleItem.className = c.item;
         this.linkExampleItem.innerHTML = this.label;
         container.appendChild(this.linkExampleItem);

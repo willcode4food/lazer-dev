@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { GetImageData, GetXY } = imagedata;
 
-export default class Canvas17GetXY {
+class Canvas17 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas17GetXY {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -47,3 +47,9 @@ export default class Canvas17GetXY {
     }
 
 }
+
+const Canvas17GetXY = () => {
+    new Canvas17();
+};
+
+export default Canvas17GetXY;

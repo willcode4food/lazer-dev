@@ -3,7 +3,7 @@ import { AddToDOM } from 'lazer/dom';
 import { Loader } from 'lazer/loader';
 const  { GetImageData, GetPixels3x3 } = imagedata;
 
-export default class Canvas22GetPixels3x3 {
+class Canvas22 {
     constructor () {
 
         this.canvas = Canvas(512, 256);
@@ -12,7 +12,7 @@ export default class Canvas22GetPixels3x3 {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('jelly').then((file) => this.loadComplete(file));
 
@@ -36,3 +36,9 @@ export default class Canvas22GetPixels3x3 {
     }
 
 }
+
+const Canvas22GetPixels3x3 = () => {
+    new Canvas22();
+};
+
+export default Canvas22GetPixels3x3;

@@ -1,9 +1,10 @@
-import { Canvas, GetContext, DrawImage, ImageRendering, Smoothing } from 'lazer/canvas';
+import { Canvas, GetContext, DrawImage, graphics, Smoothing, ImageRendering } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 import { Loader } from 'lazer/loader';
-import { Fill } from 'lazer/graphics';
 
-export default class Canvas21DrawImage3 {
+const { Fill } = graphics;
+
+class Canvas21_3 {
 
     constructor () {
 
@@ -15,7 +16,7 @@ export default class Canvas21DrawImage3 {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('mushroom2').then((file) => this.loadComplete(file));
 
@@ -36,3 +37,9 @@ export default class Canvas21DrawImage3 {
     }
 
 }
+
+const Canvas21DrawImage3 = () => {
+    new Canvas21_3();
+};
+
+export default Canvas21DrawImage3;

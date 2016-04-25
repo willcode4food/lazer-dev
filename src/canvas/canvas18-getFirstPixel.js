@@ -4,7 +4,7 @@ import { Loader } from 'lazer/loader';
 
 const { GetImageData, GetFirstPixel } = imagedata;
 
-export default class Canvas18GetFirstPixel {
+class Canvas18 {
 
     constructor () {
 
@@ -14,7 +14,7 @@ export default class Canvas18GetFirstPixel {
 
         this.loader = new Loader();
 
-        this.loader.path = 'assets/';
+        this.loader.path = './src/assets/';
 
         this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
@@ -47,3 +47,9 @@ export default class Canvas18GetFirstPixel {
     }
 
 }
+
+const Canvas18GetFirstPixel = () => {
+    new Canvas18();
+};
+
+export default Canvas18GetFirstPixel;
