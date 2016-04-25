@@ -24,23 +24,23 @@ module.exports = merge(base.common, {
 					loader: 'babel',
 					exclude: ['/node_modules', '/src/lib', '/build']
 				},
-				// {
-				// 	test: /\.js$/,
-				// 	loader: 'eslint-loader',
-				// 	exclude: ['/node_modules', '/src/lib', '/build']
-				// },
+				{
+					test: /\.js$/,
+					loader: 'eslint-loader',
+					exclude: ['/node_modules', '/src/lib', '/build']
+				},
 				{
 					test: /\.css$/,
 					loader: 'style!css?modules&sourceMap&localIdentName=[local]_[hash:base64:5]&importLoaders=1!postcss-loader',
 					exclude: ['/node_modules', '/src/lib', '/build']
 				},
 				{ 
-					test: /\.(png|jpg|svg)$/, 
-					loader: 'url-loader?limit=8192',
-					exclude: ['/node_modules', '/src/lib', '/build'] 
+					test: /\.(png|jpg|svg)$/,
+					loader: 'file-loader?limit=8192',
+					exclude: ['/node_modules', '/src/lib', '/build']
 				},
 				{
-			      test: /\.(woff|eot|ttf)$/,
+			      test: /\.(woff|eot|ttf|png|jpg|svg)$/,
 			      loader: 'url-loader?limit=100000',
 			      exclude: ['/node_modules', '/src/lib', '/build']
 			  }
