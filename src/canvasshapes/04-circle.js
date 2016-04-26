@@ -1,13 +1,11 @@
-import MainLoop from 'lazer/system/MainLoop';
-import Canvas from 'lazer/canvas/Canvas';
-import GetContext from 'lazer/canvas/GetContext';
-import AddToDOM from 'lazer/dom/AddToDOM';
-import Clear from 'lazer/canvas/graphics/Clear';
-import ResetTransform from 'lazer/canvas/ResetTransform';
-import Circle from 'lazer/canvas/shapes/Circle';
-import Rectangle from 'lazer/canvas/shapes/Rectangle';
+import { MainLoop } from 'lazer/system';
+import { Canvas, shapes, GetContext, ResetTransform, graphics } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { Circle } = shapes;
+const { Clear } = graphics;
+
+class CanvasShapes04 {
 
     constructor () {
 
@@ -51,4 +49,8 @@ export default class CanvasGraphics {
 
 }
 
-new CanvasGraphics();
+const CanvasShapes04Circle = () => {
+    new CanvasShapes04();
+};
+
+export default CanvasShapes04Circle;

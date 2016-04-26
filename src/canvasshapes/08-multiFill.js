@@ -1,14 +1,11 @@
-import { MainLoop } from 'lazer/system/MainLoop.js';
-import { Canvas } from 'lazer/canvas/Canvas.js';
-import { Fill } from 'lazer/canvas/graphics/Fill.js';
-import { Circle } from 'lazer/canvas/graphics/Circle.js';
-import { Pattern } from 'lazer/canvas/graphics/Pattern.js';
-import { GetContext } from 'lazer/canvas/GetContext.js';
-import { AddToDOM } from 'lazer/dom/AddToDOM.js';
-import { Clear } from 'lazer/canvas/graphics/Clear.js';
-import { Rectangle } from 'lazer/canvas/shapes/Rectangle.js';
+import { MainLoop } from 'lazer/system';
+import { Canvas, GetContext, shapes, graphics } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { Rectangle } = shapes;
+const { Clear, Circle, Pattern, Fill } = graphics;
+
+class CanvasShapes08 {
 
     constructor () {
 
@@ -69,4 +66,8 @@ export default class CanvasGraphics {
 
 }
 
-new CanvasGraphics();
+const CanvasShapes08MultiFill = () => {
+    new CanvasShapes08();
+};
+
+export default CanvasShapes08MultiFill;

@@ -1,10 +1,13 @@
-import MainLoop from 'lazer/system/MainLoop';
-import Canvas from 'lazer/canvas/Canvas';
-import AddToDOM from 'lazer/dom/AddToDOM';
-import BackgroundColor from 'lazer/canvas/BackgroundColor';
-import Rectangle from 'lazer/canvas/shapes/Rectangle';
+import { MainLoop } from 'lazer/system';
+import { Canvas, shapes, BackgroundColor } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { matrix } from  'lazer/math';
 
-export default class CanvasGraphics {
+const { Rectangle } = shapes;
+const { mat23 } = matrix;
+const { Set } = mat23;
+
+class CanvasShapes02 {
 
     constructor () {
 
@@ -59,4 +62,8 @@ export default class CanvasGraphics {
 
 }
 
-new CanvasGraphics();
+const CanvasShapes02MultiRect = () => {
+    new CanvasShapes02();
+};
+
+export default CanvasShapes02MultiRect;

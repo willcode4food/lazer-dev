@@ -1,18 +1,29 @@
-export { CanvasShapes00Template } from './00-template';
-export { CanvasShapes01Rect} from './01-rect';
-// export { CanvasGraphics01Line } from './01-line';
-// export { CanvasGraphics02LineWidth } from './02-lineWidth';
-// export { CanvasGraphics03LineDash } from './03-lineDash';
-// export { CanvasGraphics04Ants } from './04-ants';
-// export { CanvasGraphics05Ants2 } from './05-ants2';
-// export { CanvasGraphics06Ants3 } from './06-ants3';
-// export { CanvasGraphics07Ants4 } from './07-ants4';
-// export { CanvasGraphics08Rect } from './08-rect';
-// export { CanvasGraphics09Rect2 } from './09-rect2';
-// export { CanvasGraphics10RectRotate } from './10-rectRotate';
-// export { CanvasGraphics11Circle } from './11-circle';
-// export { CanvasGraphics12Arc } from './12-arc';
-// export { CanvasGraphics13LineDashMulti } from './13-lineDashMulti';
-// export { CanvasGraphics14LinearGradient } from './14-linearGradient1';
-// export { CanvasGraphics15RadialGradient } from './15-radialGradient1';
-// export { CanvasGraphics16LinearGradientTest } from './16-linearGradientTest';
+import CanvasShapes00Template from './00-template';
+import CanvasShapes01Rect from './01-rect';
+import CanvasShapes01aRect2 from './01a-rect2';
+import CanvasShapes01bRectScale from './01b-rectScale';
+import CanvasShapes01cRectRotate from './01c-rectRotate';
+import CanvasShapes01dRectPivot from './01d-rectPivot';
+import CanvasShapes01eRectAnchor from './01e-rectAnchor';
+import CanvasShapes01fRectScaleAnchor from './01f-rectScaleAnchor';
+import CanvasShapes02MultiRect from './02-multiRect';
+import CanvasShapes03MultiRectSpin from './03-multiRectSpin';
+import CanvasShapes04Circle from './04-circle';
+import CanvasShapes08MultiFill from './08-multiFill';
+import CanvasShapes09CirlceScale from './09-circleScale';
+
+export {
+  CanvasShapes00Template,
+  CanvasShapes01Rect,
+  CanvasShapes01aRect2,
+  CanvasShapes01bRectScale,
+  CanvasShapes01cRectRotate,
+  CanvasShapes01dRectPivot,
+  CanvasShapes01eRectAnchor,
+  CanvasShapes01fRectScaleAnchor,
+  CanvasShapes02MultiRect,
+  CanvasShapes03MultiRectSpin,
+  CanvasShapes04Circle,
+  CanvasShapes08MultiFill,
+  CanvasShapes09CirlceScale
+};

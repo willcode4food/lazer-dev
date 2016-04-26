@@ -1,10 +1,10 @@
-import MainLoop from 'lazer/system/MainLoop';
-import Canvas from 'lazer/canvas/Canvas';
-import AddToDOM from 'lazer/dom/AddToDOM';
-import BackgroundColor from 'lazer/canvas/BackgroundColor';
-import Star from 'lazer/canvas/shapes/Star';
+import { MainLoop } from 'lazer/system';
+import { Canvas, shapes, BackgroundColor } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics {
+const { Star } = shapes;
+
+class CanvasShapes06 {
 
     constructor () {
 
@@ -55,4 +55,8 @@ export default class CanvasGraphics {
 
 }
 
-new CanvasGraphics();
+const CanvasShapes06StarOutline = () => {
+    new CanvasShapes06();
+};
+
+export default CanvasShapes06StarOutline;

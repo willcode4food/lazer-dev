@@ -5,7 +5,7 @@ import { AddToDOM } from 'lazer/dom';
 const { Rectangle } = shapes;
 const { Clear } = graphics;
 
-export default class CanvasShapes01Rect {
+class CanvasShapes01{
 
     constructor () {
 
@@ -51,3 +51,8 @@ export default class CanvasShapes01Rect {
     }
 
 }
+const CanvasShapes01Rect = () => {
+    new CanvasShapes01();
+};
+
+export default CanvasShapes01Rect;
