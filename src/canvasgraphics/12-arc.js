@@ -2,9 +2,10 @@ import { DegToRad } from 'lazer/math';
 import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-const { Line, Stroke, Arc } = graphics;
+const { Stroke, Arc, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics12Arc {
+class CanvasGraphics12 {
 
     constructor () {
 
@@ -35,3 +36,9 @@ export default class CanvasGraphics12Arc {
     }
 
 }
+
+const CanvasGraphics12Arc = () => {
+    new CanvasGraphics12();
+};
+
+export default CanvasGraphics12Arc;

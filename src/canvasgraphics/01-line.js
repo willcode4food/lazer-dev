@@ -5,7 +5,7 @@ const { Stroke, Rectangle, LineStyle } = graphics;
 const Line = LineStyle;
 
 
-export default class CanvasGraphics01Line {
+class CanvasGraphics01 {
 
     constructor () {
 
@@ -40,3 +40,9 @@ export default class CanvasGraphics01Line {
     }
 
 }
+
+const CanvasGraphics01Line = () => {
+    new CanvasGraphics01();
+};
+
+export default CanvasGraphics01Line;

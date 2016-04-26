@@ -3,7 +3,7 @@ import { AddToDOM } from 'lazer/dom';
 
 const { FillGradient, Rectangle, LinearGradient } = graphics;
 
-export default class CanvasGraphics16LinearGradientTest {
+class CanvasGraphics16 {
 
     constructor () {
 
@@ -24,3 +24,9 @@ export default class CanvasGraphics16LinearGradientTest {
     }
 
 }
+
+const CanvasGraphics16LinearGradientTest = () => {
+    new CanvasGraphics16();
+};
+
+export default CanvasGraphics16LinearGradientTest;

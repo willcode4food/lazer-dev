@@ -3,9 +3,10 @@ import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 import { MainLoop } from 'lazer/system';
 
-const { Line, Stroke, Rectangle } = graphics;
+const { Stroke, Rectangle, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics10RectRotate {
+class CanvasGraphics10 {
 
     constructor () {
 
@@ -63,3 +64,9 @@ export default class CanvasGraphics10RectRotate {
     }
 
 }
+
+const CanvasGraphics10RectRotate = () => {
+    new CanvasGraphics10();
+};
+
+export default CanvasGraphics10RectRotate;

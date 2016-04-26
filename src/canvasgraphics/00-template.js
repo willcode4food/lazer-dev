@@ -2,7 +2,7 @@ import { MainLoop } from 'lazer/system';
 import { Canvas, BackgroundColor } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-export default class CanvasGraphics00Template {
+class CanvasGraphics00 {
 
     constructor () {
 
@@ -43,3 +43,9 @@ export default class CanvasGraphics00Template {
     }
 
 }
+
+const CanvasGraphics00Template = () => {
+    new CanvasGraphics00();
+};
+
+export default CanvasGraphics00Template;

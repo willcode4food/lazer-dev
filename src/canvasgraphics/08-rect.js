@@ -2,9 +2,10 @@ import { DegToRad } from 'lazer/math';
 import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-const { Line, Stroke, Rectangle } = graphics;
+const { Stroke, Rectangle, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics08Rect {
+class CanvasGraphics08 {
 
     constructor () {
 
@@ -29,3 +30,9 @@ export default class CanvasGraphics08Rect {
     }
 
 }
+
+const CanvasGraphics08Rect = () => {
+    new CanvasGraphics08();
+};
+
+export default CanvasGraphics08Rect;

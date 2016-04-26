@@ -4,7 +4,7 @@ import { AddToDOM } from 'lazer/dom';
 const { Stroke, Rectangle, LineStyle } = graphics;
 const Line = LineStyle;
 
-export default class CanvasGraphics02LineDash {
+class CanvasGraphics02 {
 
     constructor () {
 
@@ -101,3 +101,8 @@ export default class CanvasGraphics02LineDash {
     }
 
 }
+const CanvasGraphics02LineDash = () => {
+    new CanvasGraphics02();
+};
+
+export default CanvasGraphics02LineDash;

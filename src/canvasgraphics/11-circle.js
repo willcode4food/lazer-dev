@@ -1,9 +1,10 @@
 import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-const { Line, Stroke, Circle } = graphics;
+const { Stroke, Circle, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics11Circle {
+class CanvasGraphics11 {
 
     constructor () {
 
@@ -31,3 +32,9 @@ export default class CanvasGraphics11Circle {
     }
 
 }
+
+const CanvasGraphics11Circle = () => {
+    new CanvasGraphics11();
+};
+
+export default CanvasGraphics11Circle;

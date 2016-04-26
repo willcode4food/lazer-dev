@@ -1,9 +1,10 @@
 import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-const { Line, Stroke, Rectangle } = graphics;
+const { Stroke, Rectangle, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics13LineDashMulti {
+class CanvasGraphics13 {
 
     constructor () {
 
@@ -100,3 +101,9 @@ export default class CanvasGraphics13LineDashMulti {
     }
 
 }
+
+const CanvasGraphics13LineDashMulti = () => {
+    new CanvasGraphics13();
+};
+
+export default CanvasGraphics13LineDashMulti;

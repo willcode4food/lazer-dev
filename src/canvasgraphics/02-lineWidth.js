@@ -4,7 +4,7 @@ import { AddToDOM } from 'lazer/dom';
 const { Stroke, Rectangle, LineStyle } = graphics;
 const Line = LineStyle;
 
-export default class CanvasGraphics02LineWidth {
+class CanvasGraphics02 {
 
     constructor () {
 
@@ -101,3 +101,9 @@ export default class CanvasGraphics02LineWidth {
     }
 
 }
+
+const CanvasGraphics02LineWidth = () => {
+    new CanvasGraphics02();
+};
+
+export default CanvasGraphics02LineWidth;

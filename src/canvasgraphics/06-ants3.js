@@ -2,9 +2,10 @@ import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 import { MainLoop } from 'lazer/system';
 
-const { Line, Stroke, Rectangle } = graphics;
+const { Stroke, Rectangle, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics06Ants3 {
+class CanvasGraphics06 {
 
     constructor () {
 
@@ -63,3 +64,9 @@ export default class CanvasGraphics06Ants3 {
     }
 
 }
+
+const CanvasGraphics06Ants3 = () => {
+    new CanvasGraphics06();
+};
+
+export default CanvasGraphics06Ants3;

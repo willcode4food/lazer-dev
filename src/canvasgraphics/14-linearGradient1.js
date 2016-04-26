@@ -2,9 +2,10 @@ import { DegToRad } from 'lazer/math';
 import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-const { Line, FillGradient, Rectangle, LinearGradient } = graphics;
+const { FillGradient, LinearGradient, Rectangle, LineStyle } = graphics;
+const Line = LineStyle;
 
-export default class CanvasGraphics14LineGradient {
+class CanvasGraphics14 {
 
     constructor () {
 
@@ -37,3 +38,9 @@ export default class CanvasGraphics14LineGradient {
     }
 
 }
+
+const CanvasGraphics14LineGradient = () => {
+    new CanvasGraphics14();
+};
+
+export default CanvasGraphics14LineGradient;

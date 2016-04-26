@@ -1,11 +1,13 @@
 import { Canvas, BackgroundColor, graphics } from 'lazer/canvas';
 import { AddToDOM } from 'lazer/dom';
 
-const { Line, FillGradient, Rectangle, RadialGradient } = graphics;
+const { LineStyle, FillGradient, Rectangle, RadialGradient } = graphics;
+const Line = LineStyle;
+const { addColor, CreateRadialGradient } = RadialGradient;
 
-const { addColor } = RadialGradient;
+console.log(RadialGradient);
 
-export default class CanvasGraphics15RadialGradient {
+class CanvasGraphics15 {
 
     constructor () {
 
@@ -18,7 +20,7 @@ export default class CanvasGraphics15RadialGradient {
         this.ctx = this.canvas.getContext('2d');
 
         //  method 1
-        let p = RadialGradient(this.ctx, 256, 256, 300, 256, 256, 50);
+        let p = CreateRadialGradient(this.ctx, 256, 256, 300, 256, 256, 50);
         addColor(p, 0, '#ff0000');
         addColor(p, 0.5, '#ffff00');
         addColor(p, 1, '#ff00ff');
@@ -38,3 +40,9 @@ export default class CanvasGraphics15RadialGradient {
     }
 
 }
+
+const CanvasGraphics15RadialGradient = () => {
+    new CanvasGraphics15();
+};
+
+export default CanvasGraphics15RadialGradient;
