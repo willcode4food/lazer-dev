@@ -7,6 +7,7 @@ import { ExamplesContainer } from './containers/examplesContainer';
 import { ExampleItemsContainer } from './containers/exampleItemsContainer';
 import { ExampleItemButton } from './components/exampleItemButton';
 import { GameContainer } from './containers/gameContainer';
+import { Footer } from './components/footer';
 
 let exArray =['array','cache','canvas','canvasgraphics', 'canvasshapes'];
 
@@ -58,6 +59,7 @@ const updateExampleItems = (e) => {
 };
 
 exContainer.render(divGame, exArray);
+let exFooter = new Footer(divGame);
 
 // add event handlers for the container to re-render the appropriate list of
 // examples.

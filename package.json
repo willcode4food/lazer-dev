@@ -47,8 +47,7 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.8.4"
   },
-  "dependencies": {
-    "lazer": "file://C:\\Users\\willcode4food\\Source\\Repos\\lazer",
+  "dependencies": {    
     "title-case": "^1.1.2"
   }
 }
