@@ -1,15 +1,15 @@
-import Canvas from 'lazer/canvas/Canvas';
-import AddToDOM from 'lazer/dom/AddToDOM';
-import Line from 'lazer/canvas/graphics/LineStyle';
-import Stroke from 'lazer/canvas/graphics/Stroke';
-import CanvasCircle from 'lazer/canvas/graphics/Circle';
-import SetPixel from 'lazer/canvas/pixels/SetPixel';
-import Circle from 'lazer/geom/circle/Circle';
-import CircumferencePoint from 'lazer/geom/circle/CircumferencePoint';
-import DegToRad from 'lazer/math/DegToRad';
-import Between from 'lazer/math/Between';
+import { Canvas, graphics, pixels } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { circle } from 'lazer/geom';
+import { DegToRad, Between} from 'lazer/math';
 
-export default class CircleTest {
+const { Circle, CircumferencePoint } = circle;
+const { LineStyle, Stroke } = graphics;
+const Line = LineStyle;
+const CanvasCircle = graphics.Circle;
+const { SetPixel } = pixels;
+
+class Circle09 {
 
     constructor () {
 
@@ -38,4 +38,8 @@ export default class CircleTest {
 
 }
 
-new CircleTest();
+const Circle09Circumference = () => {
+    new Circle09();
+};
+
+export default Circle09Circumference;

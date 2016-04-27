@@ -1,12 +1,17 @@
-import Circle from 'lazer/geom/circle/Circle';
-import Copy from 'lazer/geom/circle/Copy';
+import { circle } from 'lazer/geom';
 
-let a = Circle(50, 100, 32);
-let b = Circle(2, 8, 100);
+const { Circle, Copy } = circle;
 
-console.log('A', a.toString());
-console.log('B', b.toString());
+const Circle02Copy = () => {
+    let a = Circle(50, 100, 32);
+    let b = Circle(2, 8, 100);
 
-Copy(a, b);
+    console.log('A', a.toString());
+    console.log('B', b.toString());
 
-console.log('B after copy', b.toString());
+    Copy(a, b);
+
+    console.log('B after copy', b.toString());
+};
+
+export default Circle02Copy;

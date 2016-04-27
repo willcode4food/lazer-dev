@@ -1,10 +1,15 @@
-import Circle from 'lazer/geom/circle/Circle';
-import Clone from 'lazer/geom/circle/Clone';
+import { circle } from 'lazer/geom';
 
-let a = Circle(50, 100, 32);
+const { Circle, Clone } = circle;
 
-console.log('A', a.toString());
+const Circle03Clone = () => {
+    let a = Circle(50, 100, 32);
 
-let b = Clone(a);
+    console.log('A', a.toString());
 
-console.log('B', b.toString());
+    let b = Clone(a);
+
+    console.log('B', b.toString());
+};
+
+export default Circle03Clone;

@@ -1,13 +1,14 @@
-import Canvas from 'lazer/canvas/Canvas';
-import AddToDOM from 'lazer/dom/AddToDOM';
-import Line from 'lazer/canvas/graphics/LineStyle';
-import Stroke from 'lazer/canvas/graphics/Stroke';
-import CanvasCircle from 'lazer/canvas/graphics/Circle';
-import SetPixel from 'lazer/canvas/pixels/SetPixel';
-import Circle from 'lazer/geom/circle/Circle';
-import Random from 'lazer/geom/circle/Random';
+import { Canvas, graphics, pixels } from 'lazer/canvas';
+import { AddToDOM } from 'lazer/dom';
+import { circle } from 'lazer/geom';
 
-export default class CircleTest {
+const { Circle, Random } = circle;
+const { LineStyle, Stroke } = graphics;
+const Line = LineStyle;
+const CanvasCircle = graphics.Circle;
+const { SetPixel } = pixels;
+
+class Circle08 {
 
     constructor () {
 
@@ -36,4 +37,8 @@ export default class CircleTest {
 
 }
 
-new CircleTest();
+const Circle08Random2 = () => {
+    new Circle08();
+};
+
+export default Circle08Random2;

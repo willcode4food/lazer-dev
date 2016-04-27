@@ -9,7 +9,7 @@ import { ExampleItemButton } from './components/exampleItemButton';
 import { GameContainer } from './containers/gameContainer';
 import { Footer } from './components/footer';
 
-let exArray =['array','cache','canvas','canvasgraphics', 'canvasshapes'];
+let exArray =['array','cache','canvas','canvasgraphics', 'canvasshapes', 'circle'];
 
 // Create the root element to graft the rest of the app onto
 let divGame = document.querySelector('#lazer-dev');

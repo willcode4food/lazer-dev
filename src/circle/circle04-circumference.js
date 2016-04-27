@@ -1,7 +1,12 @@
-import Circle from 'lazer/geom/circle/Circle';
-import Circumference from 'lazer/geom/circle/Circumference';
+import { circle } from 'lazer/geom';
 
-let a = Circle(0, 0, 64);
+const { Circle, Circumference } = circle;
 
-//  C≈402.12
-console.log('A', Circumference(a));
+const Circle04Circumference = () => {
+    let a = Circle(0, 0, 64);
+
+    //  C≈402.12
+    console.log('A', Circumference(a));
+};
+
+export default Circle04Circumference;
