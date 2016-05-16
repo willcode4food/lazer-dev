@@ -7,57 +7,57 @@ const { Clear } = graphics;
 
 class CanvasShapes01d {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(800, 600);
+		this.canvas = Canvas(800, 600);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.ctx = GetContext(this.canvas);
+		this.ctx = GetContext(this.canvas);
 
-        this.rect1 = new Rectangle({ x: 200, y: 150, width: 64, height: 16, fill: 'rgba(255,0,255,1)' });
-        this.rect1.pivotX = 100;
+		this.rect1 = new Rectangle({ x: 200, y: 150, width: 64, height: 16, fill: 'rgba(255,0,255,1)' });
+		this.rect1.pivotX = 100;
 
-        this.rect2 = new Rectangle({ x: 600, y: 150, width: 64, height: 16, fill: 'rgba(0,255,255,0.8)' });
-        this.rect2.pivotY = 100;
+		this.rect2 = new Rectangle({ x: 600, y: 150, width: 64, height: 16, fill: 'rgba(0,255,255,0.8)' });
+		this.rect2.pivotY = 100;
 
-        this.loop = new MainLoop(60);
+		this.loop = new MainLoop(60);
 
-        this.loop.begin = (t => this.begin(t));
-        this.loop.update = (delta => this.update(delta));
-        this.loop.draw = (t => this.draw(t));
+		this.loop.begin = (t => this.begin(t));
+		this.loop.update = (delta => this.update(delta));
+		this.loop.draw = (t => this.draw(t));
 
-        this.loop.start();
+		this.loop.start();
 
-    }
+	}
 
-    begin () {
+	begin () {
 
-        ResetTransform(this.ctx);
+		ResetTransform(this.ctx);
 
-        Clear(this.ctx, true, 0, 0, 50, 1);
+		Clear(this.ctx, true, 0, 0, 50, 1);
 
 
-    }
+	}
 
-    update (delta) {
+	update (delta) {
 
-        this.rect1.rotation += 0.01;
-        this.rect2.rotation += 0.01;
+		this.rect1.rotation += 0.01;
+		this.rect2.rotation += 0.01;
 
-    }
+	}
 
-    draw (i) {
+	draw (i) {
 
-        this.rect1.draw(this.ctx, i);
-        this.rect2.draw(this.ctx, i);
+		this.rect1.draw(this.ctx, i);
+		this.rect2.draw(this.ctx, i);
 
-    }
+	}
 
 }
 
 const CanvasShapes01dRectPoint = () => {
-    new CanvasShapes01d();
+	new CanvasShapes01d();
 };
 
 export default CanvasShapes01dRectPoint;

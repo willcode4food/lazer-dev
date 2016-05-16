@@ -1,7 +1,14 @@
-import CSStoRGB from 'lazer/graphics/color/CSStoRGB';
+import { color } from 'lazer/graphics';
 
-let { r, g, b } = CSStoRGB('wheat');
+const { CSStoRGB } = color;
 
-console.log('wheat', r, g, b);
+const ColorCSSToRGB01 = () => {
+	let { r, g, b } = CSStoRGB('wheat');
 
-console.log('lightskyblue', CSStoRGB('lightskyblue'));
+	console.log('wheat', r, g, b);
+
+	console.log('lightskyblue', CSStoRGB('lightskyblue'));
+
+};
+
+export default ColorCSSToRGB01;

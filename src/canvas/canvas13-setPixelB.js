@@ -7,45 +7,45 @@ const { SetPixel } = pixels;
 
 class Canvas13 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        BackgroundColor(this.canvas, '#000000');
+		BackgroundColor(this.canvas, '#000000');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        //  Draw the image
+		//  Draw the image
 
-        const ctx = GetContext(this.canvas);
+		const ctx = GetContext(this.canvas);
 
-        ctx.drawImage(file.data, 0, 0);
+		ctx.drawImage(file.data, 0, 0);
 
-        //  Draw 200 random pixels
+		//  Draw 200 random pixels
 
-        for (let i = 0; i < 200; i++)
-        {
-            SetPixel(ctx, Between(0, 320), Between(0, 200), 255, 255, 255);
-        }
+		for (let i = 0; i < 200; i++)
+		{
+			SetPixel(ctx, Between(0, 320), Between(0, 200), 255, 255, 255);
+		}
 
-    }
+	}
 
 }
 
 const Canvas13SetPixelB = () => {
-    new Canvas13;
+	new Canvas13;
 };
 
 export default Canvas13SetPixelB;

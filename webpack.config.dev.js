@@ -18,15 +18,17 @@ module.exports = merge(base.common, {
 			port: process.env.PORT
 		},
 		module: {
+			preLoaders: [
+				{
+					test: /\.js$/,
+					loader: 'eslint-loader',
+					exclude: ['/node_modules', '/src/lib', '/build']
+				}
+			],
 			loaders: [
 				{
 					test: /\.js$/,
 					loader: 'babel',
-					exclude: ['/node_modules', '/src/lib', '/build']
-				},
-				{
-					test: /\.js$/,
-					loader: 'eslint-loader',
 					exclude: ['/node_modules', '/src/lib', '/build']
 				},
 				{

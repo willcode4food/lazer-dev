@@ -6,45 +6,45 @@ const { SetPixel } = pixels;
 
 class Canvas08 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        BackgroundColor(this.canvas, '#000000');
+		BackgroundColor(this.canvas, '#000000');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        //  Draw the image
+		//  Draw the image
 
-        const ctx = GetContext(this.canvas);
+		const ctx = GetContext(this.canvas);
 
-        ctx.drawImage(file.data, 0, 0);
+		ctx.drawImage(file.data, 0, 0);
 
-        //  Draws 4 purple pixels at 32x22
+		//  Draws 4 purple pixels at 32x22
 
-        SetPixel(ctx, 32, 22, 255, 0, 255);
-        SetPixel(ctx, 33, 22, 255, 0, 255);
-        SetPixel(ctx, 32, 23, 255, 0, 255);
-        SetPixel(ctx, 33, 23, 255, 0, 255);
+		SetPixel(ctx, 32, 22, 255, 0, 255);
+		SetPixel(ctx, 33, 22, 255, 0, 255);
+		SetPixel(ctx, 32, 23, 255, 0, 255);
+		SetPixel(ctx, 33, 23, 255, 0, 255);
 
-    }
+	}
 
 }
 
 const Canvas08SetPixel = () => {
-    new Canvas08();
+	new Canvas08();
 };
 
 export default Canvas08SetPixel;

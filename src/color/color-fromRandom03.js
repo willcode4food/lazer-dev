@@ -1,5 +1,12 @@
-import RandomRGB from 'lazer/graphics/color/RandomRGB';
+import { color } from 'lazer/graphics';
 
-let { r, g, b } = RandomRGB();
+const { RandomRGB } = color;
 
-console.log(r, g, b);
+const ColorFromRandom3 = () => {
+	let { r, g, b } = RandomRGB();
+
+	console.log(r, g, b);
+};
+
+
+export default ColorFromRandom3;

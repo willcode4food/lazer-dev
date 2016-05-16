@@ -7,54 +7,54 @@ const { Clear } = graphics;
 
 class CanvasShapes01a {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(800, 600);
+		this.canvas = Canvas(800, 600);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.ctx = GetContext(this.canvas);
+		this.ctx = GetContext(this.canvas);
 
-        this.rect1 = new Rectangle({ x: 0, y: 0, width: 64, height: 64, fill: 'rgba(255,0,255,1)' });
-        this.rect2 = new Rectangle({ x: 32, y: 32, width: 64, height: 64, fill: 'rgba(0,255,255,0.8)' });
+		this.rect1 = new Rectangle({ x: 0, y: 0, width: 64, height: 64, fill: 'rgba(255,0,255,1)' });
+		this.rect2 = new Rectangle({ x: 32, y: 32, width: 64, height: 64, fill: 'rgba(0,255,255,0.8)' });
 
-        this.loop = new MainLoop(60);
+		this.loop = new MainLoop(60);
 
-        this.loop.begin = (t => this.begin(t));
-        this.loop.update = (delta => this.update(delta));
-        this.loop.draw = (t => this.draw(t));
+		this.loop.begin = (t => this.begin(t));
+		this.loop.update = (delta => this.update(delta));
+		this.loop.draw = (t => this.draw(t));
 
-        this.loop.start();
+		this.loop.start();
 
-    }
+	}
 
-    begin () {
+	begin () {
 
-        ResetTransform(this.ctx);
+		ResetTransform(this.ctx);
 
-        Clear(this.ctx, true, 0, 0, 50, 1);
+		Clear(this.ctx, true, 0, 0, 50, 1);
 
-        this.rect1.x++;
-        this.rect2.x++;
+		this.rect1.x++;
+		this.rect2.x++;
 
 
-    }
+	}
 
-    update (delta) {
+	update (delta) {
 
-    }
+	}
 
-    draw (i) {
+	draw (i) {
 
-        this.rect1.draw(this.ctx, i);
-        this.rect2.draw(this.ctx, i);
+		this.rect1.draw(this.ctx, i);
+		this.rect2.draw(this.ctx, i);
 
-    }
+	}
 
 }
 
 const CanvasShapes01aRect2 = () => {
-    new CanvasShapes01a();
+	new CanvasShapes01a();
 };
 
 export default CanvasShapes01aRect2;

@@ -13,17 +13,17 @@ import CanvasShapes08MultiFill from './08-multiFill';
 import CanvasShapes09CirlceScale from './09-circleScale';
 
 export {
-  CanvasShapes00Template,
-  CanvasShapes01Rect,
-  CanvasShapes01aRect2,
-  CanvasShapes01bRectScale,
-  CanvasShapes01cRectRotate,
-  CanvasShapes01dRectPivot,
-  CanvasShapes01eRectAnchor,
-  CanvasShapes01fRectScaleAnchor,
-  CanvasShapes02MultiRect,
-  CanvasShapes03MultiRectSpin,
-  CanvasShapes04Circle,
-  CanvasShapes08MultiFill,
-  CanvasShapes09CirlceScale
+	CanvasShapes00Template,
+	CanvasShapes01Rect,
+	CanvasShapes01aRect2,
+	CanvasShapes01bRectScale,
+	CanvasShapes01cRectRotate,
+	CanvasShapes01dRectPivot,
+	CanvasShapes01eRectAnchor,
+	CanvasShapes01fRectScaleAnchor,
+	CanvasShapes02MultiRect,
+	CanvasShapes03MultiRectSpin,
+	CanvasShapes04Circle,
+	CanvasShapes08MultiFill,
+	CanvasShapes09CirlceScale
 };

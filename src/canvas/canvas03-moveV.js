@@ -6,44 +6,44 @@ const { MoveVertical } = effects;
 
 class Canvas03 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        this.pic = null;
+		this.pic = null;
 
-        BackgroundColor(this.canvas, 'rgb(200, 50, 50)');
-        AddToDOM(this.canvas, 'game');
+		BackgroundColor(this.canvas, 'rgb(200, 50, 50)');
+		AddToDOM(this.canvas, 'game');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        this.pic = file.data;
+		this.pic = file.data;
 
-        //  Draw the image in its initial state
-        GetContext(this.canvas).drawImage(this.pic, 0, 0);
+		//  Draw the image in its initial state
+		GetContext(this.canvas).drawImage(this.pic, 0, 0);
 
-        //  Move it up by 100px
-        // MoveVertical(this.canvas, -100, false);
-        // MoveVertical(this.canvas, -100, true);
+		//  Move it up by 100px
+		// MoveVertical(this.canvas, -100, false);
+		// MoveVertical(this.canvas, -100, true);
 
-        //  Move it down by 100px
-        // MoveVertical(this.canvas, 100, false);
-        MoveVertical(this.canvas, 100, true);
+		//  Move it down by 100px
+		// MoveVertical(this.canvas, 100, false);
+		MoveVertical(this.canvas, 100, true);
 
-    }
+	}
 
 }
 const Canvas03MoveV = () => {
-    new Canvas03();
+	new Canvas03();
 };
 export default Canvas03MoveV;

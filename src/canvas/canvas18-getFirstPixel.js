@@ -6,50 +6,50 @@ const { GetImageData, GetFirstPixel } = imagedata;
 
 class Canvas18 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        //  Draw the image
+		//  Draw the image
 
-        const ctx = GetContext(this.canvas);
+		const ctx = GetContext(this.canvas);
 
-        ctx.drawImage(file.data, 0, 0);
+		ctx.drawImage(file.data, 0, 0);
 
-        const imageData = GetImageData(ctx);
+		const imageData = GetImageData(ctx);
 
-        //  Scan from Top to Bottom (Left to Right)
-        console.log(GetFirstPixel(imageData, 0)); // 9x23
+		//  Scan from Top to Bottom (Left to Right)
+		console.log(GetFirstPixel(imageData, 0)); // 9x23
 
-        //  Scan from Bottom to Top (Right to Left)
-        console.log(GetFirstPixel(imageData, 1)); // 180x176
+		//  Scan from Bottom to Top (Right to Left)
+		console.log(GetFirstPixel(imageData, 1)); // 180x176
 
-        //  Scan from Left to Right
-        console.log(GetFirstPixel(imageData, 2)); // 9x23
+		//  Scan from Left to Right
+		console.log(GetFirstPixel(imageData, 2)); // 9x23
 
-        //  Scan from Right to Left
-        console.log(GetFirstPixel(imageData, 3)); // 310x23
+		//  Scan from Right to Left
+		console.log(GetFirstPixel(imageData, 3)); // 310x23
 
-    }
+	}
 
 }
 
 const Canvas18GetFirstPixel = () => {
-    new Canvas18();
+	new Canvas18();
 };
 
 export default Canvas18GetFirstPixel;

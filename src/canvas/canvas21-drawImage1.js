@@ -7,37 +7,37 @@ const { Fill } = graphics;
 
 class Canvas21_1 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(800, 600);
+		this.canvas = Canvas(800, 600);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('mushroom2').then((file) => this.loadComplete(file));
+		this.loader.image('mushroom2').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        const ctx = GetContext(this.canvas);
+		const ctx = GetContext(this.canvas);
 
-        Fill(ctx, 120, 0, 120);
+		Fill(ctx, 120, 0, 120);
 
-        //  Draw the image at 0x0 with no arguments at all
-        DrawImage(ctx, file.data);
+		//  Draw the image at 0x0 with no arguments at all
+		DrawImage(ctx, file.data);
 
-    }
+	}
 
 }
 
 const Canvas21DrawImage1 = () => {
-    new Canvas21_1();
+	new Canvas21_1();
 };
 
 export default Canvas21DrawImage1;

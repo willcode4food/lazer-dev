@@ -1,10 +1,17 @@
-import Color from 'lazer/graphics/color/BaseColor';
+import { color } from 'lazer/graphics';
 
-let red = new Color(255);
+const { BaseColor } = color;
+const Color = BaseColor;
 
-//  Default is the # prefix
-console.log(red.toString());
+const ColorBase02 = () => {
+	let red = new Color(255);
 
-//  Or 0x prefix
-console.log(red.toString('0x'));
+	//  Default is the # prefix
+	console.log(red.toString());
+
+	//  Or 0x prefix
+	console.log(red.toString('0x'));
+};
+
+export default ColorBase02;
 

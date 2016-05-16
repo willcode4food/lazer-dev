@@ -6,57 +6,57 @@ const { GetImageData, Process } = imagedata;
 
 class Canvas11 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        //  Draw the image
+		//  Draw the image
 
-        const ctx = GetContext(this.canvas);
+		const ctx = GetContext(this.canvas);
 
-        ctx.drawImage(file.data, 0, 0);
+		ctx.drawImage(file.data, 0, 0);
 
-        const imageData = GetImageData(ctx);
+		const imageData = GetImageData(ctx);
 
-        // Process(imageData, this.greyScale);
-        Process(imageData, this.greyScale, 0, 0, 160, 200);
-        // Process(imageData, this.greyScale, 60, 0, 160, 200);
-        // Process(imageData, this.greyScale, 160, 0, 160, 200);
-        // Process(imageData, this.greyScale, 200, 100, 160, 200);
+		// Process(imageData, this.greyScale);
+		Process(imageData, this.greyScale, 0, 0, 160, 200);
+		// Process(imageData, this.greyScale, 60, 0, 160, 200);
+		// Process(imageData, this.greyScale, 160, 0, 160, 200);
+		// Process(imageData, this.greyScale, 200, 100, 160, 200);
 
-        ctx.putImageData(imageData, 0, 0);
+		ctx.putImageData(imageData, 0, 0);
 
-    }
+	}
 
-    greyScale (x, y, r, g, b, a) {
+	greyScale (x, y, r, g, b, a) {
 
-        let avg = (r + g + b) / 3;
+		let avg = (r + g + b) / 3;
 
-        r = avg;
-        g = avg;
-        b = avg;
+		r = avg;
+		g = avg;
+		b = avg;
 
-        return [ r, g, b, a ];
+		return [ r, g, b, a ];
 
-    }
+	}
 
 }
 const Canvas11ProcessPixels = () => {
-    new Canvas11();
+	new Canvas11();
 };
 
 export default Canvas11ProcessPixels;

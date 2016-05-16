@@ -6,45 +6,45 @@ const { MoveHorizontal } = effects;
 
 class Canvas02 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        this.pic = null;
+		this.pic = null;
 
-        BackgroundColor(this.canvas, 'rgb(200, 50, 50)');
-        AddToDOM(this.canvas, 'game');
+		BackgroundColor(this.canvas, 'rgb(200, 50, 50)');
+		AddToDOM(this.canvas, 'game');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = 'http://projectneptune.blob.core.windows.net/lazer/';
+		this.loader.path = 'http://projectneptune.blob.core.windows.net/lazer/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        this.pic = file.data;
+		this.pic = file.data;
 
-        //  Draw the image in its initial state
-        GetContext(this.canvas).drawImage(this.pic, 0, 0);
+		//  Draw the image in its initial state
+		GetContext(this.canvas).drawImage(this.pic, 0, 0);
 
-        //  Move it left by 100px
-        // MoveHorizontal(this.canvas, -100, false);
-        MoveHorizontal(this.canvas, -100, true);
+		//  Move it left by 100px
+		// MoveHorizontal(this.canvas, -100, false);
+		MoveHorizontal(this.canvas, -100, true);
 
-        //  Move it right by 100px
-        // MoveHorizontal(this.canvas, 100, false);
-        // MoveHorizontal(this.canvas, 100, true);
+		//  Move it right by 100px
+		// MoveHorizontal(this.canvas, 100, false);
+		// MoveHorizontal(this.canvas, 100, true);
 
-    }
+	}
 
 }
 const Canvas02MoveH = () => {
-    new Canvas02();
+	new Canvas02();
 };
 
 export default Canvas02MoveH;

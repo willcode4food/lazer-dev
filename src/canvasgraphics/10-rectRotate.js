@@ -8,65 +8,65 @@ const Line = LineStyle;
 
 class CanvasGraphics10 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(512, 512);
+		this.canvas = Canvas(512, 512);
 
-        BackgroundColor(this.canvas, 'rgb(0, 0, 20)');
+		BackgroundColor(this.canvas, 'rgb(0, 0, 20)');
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.ctx = this.canvas.getContext('2d');
+		this.ctx = this.canvas.getContext('2d');
 
-        this.angle = 0;
+		this.angle = 0;
 
-        this.loop = new MainLoop(60);
+		this.loop = new MainLoop(60);
 
-        this.loop.begin = (t => this.begin(t));
-        this.loop.update = (delta => this.update(delta));
-        this.loop.draw = (t => this.draw(t));
+		this.loop.begin = (t => this.begin(t));
+		this.loop.update = (delta => this.update(delta));
+		this.loop.draw = (t => this.draw(t));
 
-        this.loop.start();
+		this.loop.start();
 
-    }
+	}
 
-    begin () {
+	begin () {
 
-        this.ctx.clearRect(0, 0, 512, 512);
+		this.ctx.clearRect(0, 0, 512, 512);
 
-    }
+	}
 
-    update (delta) {
+	update (delta) {
 
-        this.angle++;
+		this.angle++;
 
-        this.angle = Wrap(this.angle, 0, 360);
+		this.angle = Wrap(this.angle, 0, 360);
 
-    }
+	}
 
-    draw (i) {
+	draw (i) {
 
-        this.ctx.save();
+		this.ctx.save();
 
-        this.ctx.beginPath();
+		this.ctx.beginPath();
 
-        Line(this.ctx, 2);
+		Line(this.ctx, 2);
 
-        //  Rotate from center
-        Rectangle(this.ctx, 256, 256, 128, 128, DegToRad(this.angle), true);
+		//  Rotate from center
+		Rectangle(this.ctx, 256, 256, 128, 128, DegToRad(this.angle), true);
 
-        Stroke(this.ctx, 255, 255, 0);
+		Stroke(this.ctx, 255, 255, 0);
 
-        this.ctx.closePath();
+		this.ctx.closePath();
 
-        this.ctx.restore();
+		this.ctx.restore();
 
-    }
+	}
 
 }
 
 const CanvasGraphics10RectRotate = () => {
-    new CanvasGraphics10();
+	new CanvasGraphics10();
 };
 
 export default CanvasGraphics10RectRotate;

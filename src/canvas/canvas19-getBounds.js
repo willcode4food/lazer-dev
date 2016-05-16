@@ -6,45 +6,45 @@ const { GetImageData, GetBounds } = imagedata;
 
 class Canvas19 {
 
-    constructor () {
+	constructor () {
 
-        this.canvas = Canvas(320, 200);
+		this.canvas = Canvas(320, 200);
 
-        AddToDOM(this.canvas, 'game');
+		AddToDOM(this.canvas, 'game');
 
-        this.loader = new Loader();
+		this.loader = new Loader();
 
-        this.loader.path = './src/assets/';
+		this.loader.path = './src/assets/';
 
-        this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
+		this.loader.image('agent-t-buggin-acf_logo').then((file) => this.loadComplete(file));
 
-        this.loader.start();
+		this.loader.start();
 
-    }
+	}
 
-    loadComplete (file) {
+	loadComplete (file) {
 
-        //  Draw the image
+		//  Draw the image
 
-        const ctx = GetContext(this.canvas);
+		const ctx = GetContext(this.canvas);
 
-        ctx.drawImage(file.data, 0, 0);
+		ctx.drawImage(file.data, 0, 0);
 
-        const imageData = GetImageData(ctx);
+		const imageData = GetImageData(ctx);
 
-        const bounds = GetBounds(imageData);
+		const bounds = GetBounds(imageData);
 
-        console.log(bounds);
+		console.log(bounds);
 
-        ctx.strokeStyle = '#ff00ff';
-        ctx.strokeRect(bounds.x, bounds.y, bounds.width, bounds.height);
+		ctx.strokeStyle = '#ff00ff';
+		ctx.strokeRect(bounds.x, bounds.y, bounds.width, bounds.height);
 
-    }
+	}
 
 }
 
 const Canvas19GetBounds = () => {
-    new Canvas19();
+	new Canvas19();
 };
 
 export default Canvas19GetBounds;

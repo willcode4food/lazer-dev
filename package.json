@@ -4,7 +4,7 @@
   "description": "This is a temporary development repo for [Lazer](https://github.com/photonstorm/lazer). In here we store all of our testing files as the framework is built out. Once released this repo will be deleted and useful code will be migrated to the Lazer Examples repo.",
   "main": "/build/app.js",
   "scripts": {
-    "dev": "npm install && webpack-dev-server --config webpack.config.dev.js --progress --colors",
+    "dev": "webpack-dev-server --config webpack.config.dev.js --progress --colors",
     "build": "npm install && webpack --config webpack.config.prod.js",
     "profile": "npm install && webpack --progress --profile --json > stats.json",
     "test-chai": "mocha --compilers js:babel-core/register src/cache/cache_spec.js"
@@ -47,7 +47,8 @@
     "webpack-dev-server": "^1.14.1",
     "webpack-merge": "^0.8.4"
   },
-  "dependencies": {    
+  "dependencies": {
+    "lazer": "git://github.com/photonstorm/lazer.git#Update_ES6_Imports_Relative",
     "title-case": "^1.1.2"
   }
 }

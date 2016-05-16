@@ -17,21 +17,21 @@ import CanvasGraphics15RadialGradient from './15-radialGradient1';
 import CanvasGraphics16LinearGradientTest from './16-linearGradientTest';
 
 export {
-    CanvasGraphics00Template,
-    CanvasGraphics01Line,
-    CanvasGraphics02LineWidth,
-    CanvasGraphics03LineDash,
-    CanvasGraphics04Ants,
-    CanvasGraphics05Ants2,
-    CanvasGraphics06Ants3,
-    CanvasGraphics07Ants4,
-    CanvasGraphics08Rect,
-    CanvasGraphics09Rect2,
-    CanvasGraphics10RectRotate,
-    CanvasGraphics11Circle,
-    CanvasGraphics12Arc,
-    CanvasGraphics13LineDashMulti,
-    CanvasGraphics14LinearGradient,
-    CanvasGraphics15RadialGradient,
-    CanvasGraphics16LinearGradientTest
+	CanvasGraphics00Template,
+	CanvasGraphics01Line,
+	CanvasGraphics02LineWidth,
+	CanvasGraphics03LineDash,
+	CanvasGraphics04Ants,
+	CanvasGraphics05Ants2,
+	CanvasGraphics06Ants3,
+	CanvasGraphics07Ants4,
+	CanvasGraphics08Rect,
+	CanvasGraphics09Rect2,
+	CanvasGraphics10RectRotate,
+	CanvasGraphics11Circle,
+	CanvasGraphics12Arc,
+	CanvasGraphics13LineDashMulti,
+	CanvasGraphics14LinearGradient,
+	CanvasGraphics15RadialGradient,
+	CanvasGraphics16LinearGradientTest
 };

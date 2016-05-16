@@ -1,9 +1,16 @@
-import Color from 'lazer/graphics/color/BaseColor';
+import { color } from 'lazer/graphics';
 
-let purple = new Color.create(0xff00ff);
-let mold = new Color.create(0x39b54a);
-let aqua = new Color.create(0x8836a8f7);
+const { BaseColor } = color;
+const Color = BaseColor;
 
-console.log(purple);
-console.log(mold);
-console.log(aqua);
+const ColorFromColor01 = () => {
+	let purple = new Color.create(0xff00ff);
+	let mold = new Color.create(0x39b54a);
+	let aqua = new Color.create(0x8836a8f7);
+
+	console.log(purple);
+	console.log(mold);
+	console.log(aqua);
+};
+
+export default ColorFromColor01;

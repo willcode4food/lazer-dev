@@ -9,13 +9,13 @@ import Circle08Random2 from './circle08-random2.js';
 import Circle09Circumference from './circle09-circumferencePoint.js';
 
 export {
-  Circle01Create,
-  Circle02Copy,
-  Circle03Clone,
-  Circle04Circumference,
-  Circle05Area,
-  Circle06Equals,
-  Circle07Random,
-  Circle08Random2,
-  Circle09Circumference
+	Circle01Create,
+	Circle02Copy,
+	Circle03Clone,
+	Circle04Circumference,
+	Circle05Area,
+	Circle06Equals,
+	Circle07Random,
+	Circle08Random2,
+	Circle09Circumference
 };
